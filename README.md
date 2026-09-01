@@ -8,7 +8,7 @@ FarmaClick es un sistema web robusto de gestión interna y E-commerce diseñado 
 ## 🛠️ Stack Tecnológico
 * **Frontend:** React.js.
 * **Backend:** Node.js.
-* **Base de Datos:** PostgresSQL.
+* **Base de Datos:** PostgreSQL.
 * **Despliegue:** GCP.
 
 ## ✨ Metodología de proyecto:
@@ -16,8 +16,8 @@ FarmaClick es un sistema web robusto de gestión interna y E-commerce diseñado 
 
 ## 👨‍💻 Scrum Team
 **Product Owner / Developer - Alejandro Elias Fuentes Navarrete**  
-**Scrum Master / Developer - Victor Rubilar**
-**Developer / Developer - Robert Gonzalez** 
+**Scrum Master / Developer - Victor Rubilar**                     
+**Developer - Robert Gonzalez** 
 
 ![](DSoftware2.1.PNG) 
 ![](logo_MediFarm.jpeg) 
