@@ -15,6 +15,7 @@ FarmaClick es un sistema web robusto de gestión interna y E-commerce diseñado 
 
 ## ✨ Metodología de proyecto:
 * **Agile Scrum**
+
 ## 👨‍💻 Scrum Team
 **Product Owner / Developer - Alejandro Elias Fuentes Navarrete**  
 **Scrum Master / Developer - Victor Rubilar**                     
