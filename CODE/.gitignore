@@ -1,0 +1,15 @@
+# Dependencias y compilados
+node_modules/
+dist/
+*.log
+
+# Variables de entorno: solo se versionan las plantillas .env.example
+.env
+.env.*
+!.env.example
+
+# Sistema operativo y editores
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/

@@ -1,0 +1,8 @@
+# Finales de línea normalizados a LF en el repositorio (los equipos Windows pueden trabajar con CRLF en su copia).
+* text=auto
+# Lo que se ejecuta en Linux (contenedores, VM, CI) conserva LF también en la copia de trabajo.
+*.sh text eol=lf
+*.sql text eol=lf
+Dockerfile text eol=lf
+*.conf text eol=lf
+*.yml text eol=lf
