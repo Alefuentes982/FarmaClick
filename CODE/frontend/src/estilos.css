@@ -1,0 +1,127 @@
+/* Estilos comunes de FarmaClick, sobre Bootstrap. La idea: cada bloque de información es una tarjeta blanca sobre un
+   fondo gris claro, con una cabecera que lo titula, para que se distinga dónde empieza y termina cada sección. */
+:root {
+  --fc-fondo: #edf0f5;
+  --fc-superficie: #ffffff;
+  --fc-borde: #d5dce7;
+  --fc-cabecera: #f3f6fb;
+  --fc-texto: #1f2937;
+  --fc-suave: #6b7280;
+  --fc-primario: #0d6efd;
+  --fc-primario-oscuro: #0a3d91;
+  --fc-sombra: 0 1px 2px rgba(16, 24, 40, 0.06), 0 1px 3px rgba(16, 24, 40, 0.04);
+}
+
+body { background: var(--fc-fondo); color: var(--fc-texto); }
+main.container { padding-top: 0.25rem; }
+
+/* ---- Barra superior y navegación ---- */
+/* Barra blanca con el logo a color y una línea con los colores de la marca (morado, turquesa, verde). */
+:root { --fc-marca-morado: #74109E; --fc-marca-turquesa: #4BACAB; --fc-marca-verde: #A3C940; }
+.fc-topbar {
+  background: var(--fc-superficie); color: var(--fc-texto);
+  border-bottom: 3px solid transparent;
+  border-image: linear-gradient(90deg, var(--fc-marca-morado), var(--fc-marca-turquesa) 45%, var(--fc-marca-verde)) 1;
+}
+.fc-logo { height: 36px; width: auto; display: block; flex-shrink: 0; }
+.fc-topbar-usuario { min-width: 0; margin-left: 1rem; }
+@media (max-width: 575.98px) { .fc-logo { height: 28px; } }
+.fc-logo-login { height: auto; width: 100%; max-width: 300px; display: block; margin: 0 auto 0.75rem; }
+.fc-nav { background: var(--fc-superficie); border-bottom: 1px solid var(--fc-borde); box-shadow: var(--fc-sombra); margin-bottom: 1.5rem; }
+.fc-nav .fc-nav-lista { display: flex; flex-wrap: wrap; gap: 0 0.1rem; }
+.fc-nav .nav-link { color: #4b5563; padding: 0.65rem 0.6rem; font-size: 0.9rem; font-weight: 500; white-space: nowrap; border-bottom: 3px solid transparent; }
+.fc-nav .nav-link:hover { color: var(--fc-primario); background: #f5f8ff; }
+.fc-nav .nav-link.active { color: var(--fc-primario); border-bottom-color: var(--fc-primario); font-weight: 600; }
+
+/* ---- Encabezado de página ---- */
+.fc-pagina-cabecera {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.75rem;
+  padding-bottom: 0.9rem; margin-bottom: 1.25rem; border-bottom: 2px solid var(--fc-borde);
+}
+.fc-pagina-titulo { font-size: 1.55rem; font-weight: 700; margin: 0; color: var(--fc-texto); }
+.fc-pagina-acciones { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+
+/* ---- Secciones (tarjetas con cabecera) ---- */
+.fc-seccion {
+  background: var(--fc-superficie); border: 1px solid var(--fc-borde); border-radius: 0.75rem;
+  box-shadow: var(--fc-sombra); margin-bottom: 1.25rem; overflow: hidden;
+}
+.fc-seccion-cabecera {
+  display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 0.5rem;
+  padding: 0.65rem 1rem; background: var(--fc-cabecera); border-bottom: 1px solid var(--fc-borde); border-left: 4px solid var(--fc-primario);
+}
+.fc-seccion-titulo { font-size: 1rem; font-weight: 700; margin: 0; color: var(--fc-texto); display: flex; align-items: center; gap: 0.5rem; }
+.fc-seccion-titulo i { color: var(--fc-primario); }
+.fc-seccion-cuerpo { padding: 1rem; }
+.fc-seccion-cuerpo.fc-plano { padding: 0; }
+.fc-seccion .table-responsive { border: 0; border-radius: 0; box-shadow: none; margin: 0; background: transparent; }
+.fc-seccion .table { margin-bottom: 0; }
+/* Secciones lado a lado: mismo alto y separación hacia lo que sigue. */
+.row.g-3:has(> [class*="col-"] > .fc-seccion) { margin-bottom: 1.25rem; }
+.row.g-3 > [class*="col-"] > .fc-seccion { margin-bottom: 0; height: 100%; }
+.fc-seccion-pie { padding: 0.6rem 1rem; border-top: 1px solid var(--fc-borde); background: #fafbfd; color: var(--fc-suave); font-size: 0.85rem; }
+
+/* ---- Barra de filtros ---- */
+.fc-filtros {
+  background: var(--fc-superficie); border: 1px solid var(--fc-borde); border-radius: 0.75rem; box-shadow: var(--fc-sombra);
+  padding: 0.75rem 1rem; margin-bottom: 1.25rem;
+}
+.fc-filtros > * + * { margin-top: 0.6rem; }
+.fc-filtros-titulo { font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.05em; color: var(--fc-suave); margin-bottom: 0.4rem; }
+
+/* ---- Tablas ---- */
+.table { font-size: 0.92rem; --bs-table-bg: transparent; }
+.table > thead > tr > th {
+  background: #e9eef6; color: #3f4b5f; font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em;
+  border-bottom: 2px solid #c5cfdf; white-space: nowrap; vertical-align: middle; padding-top: 0.6rem; padding-bottom: 0.6rem;
+}
+.table > tbody > tr > td { vertical-align: middle; }
+.table > tfoot > tr > td { background: #f3f6fb; border-top: 2px solid #c5cfdf; }
+.table-hover > tbody > tr:hover > * { --bs-table-hover-bg: #f1f6ff; }
+/* Una lista directa sobre el fondo gris (sin sección) se ve como tarjeta. */
+main > .table-responsive, main > div > .table-responsive, .fc-lista {
+  background: var(--fc-superficie); border: 1px solid var(--fc-borde); border-radius: 0.75rem; box-shadow: var(--fc-sombra); margin-bottom: 1rem;
+}
+main > .table-responsive > .table, main > div > .table-responsive > .table { margin-bottom: 0; }
+main > .table-responsive > .table > thead > tr:first-child > th:first-child { border-top-left-radius: 0.75rem; }
+main > .table-responsive > .table > thead > tr:first-child > th:last-child { border-top-right-radius: 0.75rem; }
+
+/* Títulos de sección sueltos (h3.h5): una franja con acento, distinta de los encabezados de columna. */
+main h3.h5 {
+  font-size: 0.98rem; font-weight: 700; margin: 1.6rem 0 0.7rem; padding: 0.5rem 0.8rem;
+  background: var(--fc-cabecera); border: 1px solid var(--fc-borde); border-left: 4px solid var(--fc-primario); border-radius: 0.4rem;
+}
+.fc-seccion-cuerpo h3.h5, .card h3.h5 { margin-top: 0; }
+
+/* ---- Indicadores ---- */
+.fc-kpi { background: var(--fc-superficie); border: 1px solid var(--fc-borde); border-left: 4px solid var(--fc-primario); border-radius: 0.6rem; box-shadow: var(--fc-sombra); }
+.fc-kpi.fc-kpi-alerta { border-left-color: #f59e0b; }
+.fc-kpi-titulo { font-size: 0.74rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.04em; color: var(--fc-suave); }
+.fc-kpi-valor { font-size: 1.55rem; font-weight: 700; line-height: 1.2; }
+
+/* ---- Fichas (pares etiqueta / valor) ---- */
+.fc-ficha { margin: 0; }
+.fc-ficha > div { display: flex; gap: 1rem; padding: 0.4rem 0; border-bottom: 1px dashed #e3e8f0; }
+.fc-ficha > div:last-child { border-bottom: 0; }
+.fc-ficha dt { flex: 0 0 38%; color: var(--fc-suave); font-weight: 600; font-size: 0.85rem; }
+.fc-ficha dd { flex: 1; margin: 0; }
+.fc-total-bloque { text-align: right; }
+.fc-total-bloque .fc-total-importe { font-size: 1.7rem; font-weight: 700; }
+
+/* ---- Formularios en tarjeta ---- */
+form.fc-formulario { background: var(--fc-superficie); border: 1px solid var(--fc-borde); border-radius: 0.75rem; box-shadow: var(--fc-sombra); padding: 1.25rem; }
+.form-label, .col-form-label { font-weight: 600; font-size: 0.88rem; color: #374151; }
+
+/* ---- Varios ---- */
+.card { border-color: var(--fc-borde); box-shadow: var(--fc-sombra); }
+.alert { border-radius: 0.6rem; }
+.btn-group-sm > .btn, .btn-sm { font-weight: 500; }
+.nav-tabs { border-bottom: 2px solid var(--fc-borde); }
+.nav-tabs .nav-link { font-weight: 600; color: #4b5563; }
+.nav-tabs .nav-link.active { color: var(--fc-primario); border-color: var(--fc-borde) var(--fc-borde) var(--fc-fondo); background: var(--fc-fondo); }
+
+/* Tablas con buscador de producto en sus filas (órdenes de compra): la lista de coincidencias puede salir de la tabla
+   en vez de quedar recortada por el desplazamiento horizontal. En pantallas chicas se mantiene el desplazamiento. */
+@media (min-width: 768px) {
+  .table-responsive.fc-tabla-buscador { overflow: visible; }
+}

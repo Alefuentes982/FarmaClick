@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="126 117 264 264" role="img" aria-label="FarmaClick">
+  <defs>
+    <linearGradient id="fc-grad" x1="136" y1="150" x2="300" y2="368" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#74109E"/><stop offset="0.42" stop-color="#4BACAB"/><stop offset="0.72" stop-color="#4BACAB"/><stop offset="1" stop-color="#A3C940"/>
+    </linearGradient>
+  </defs>
+  <path fill="url(#fc-grad)" d="M222,127 H374 a6,6 0 0 1 6,6 V181 a6,6 0 0 1 -6,6 H300 V207 H374 a6,6 0 0 1 6,6 V282 a6,6 0 0 1 -6,6 H300 V362 a6,6 0 0 1 -6,6 H222 a6,6 0 0 1 -6,-6 V288 H142 a6,6 0 0 1 -6,-6 V213 a6,6 0 0 1 6,-6 H216 V133 a6,6 0 0 1 6,-6 Z"/>
+</svg>

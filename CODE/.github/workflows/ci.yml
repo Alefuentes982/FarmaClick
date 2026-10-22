@@ -1,0 +1,126 @@
+# Integración continua: control de secretos, pruebas, validación del esquema SQL y construcción de las imágenes.
+# Docker para linux/amd64 (VM Micro x86_64 de Oracle Cloud) y publicación en GitHub Container Registry.
+name: CI
+on:
+  push: { branches: [develop, main] }
+  pull_request:
+
+jobs:
+  # Bloquea el pipeline si se versionó algún secreto: archivos .env reales, la carpeta _privado/ o credenciales.
+  seguridad:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: No hay secretos versionados
+        run: |
+          prohibidos=$(git ls-files | grep -E '(^|/)_privado/|(^|/)\.env$|(^|/)\.env\.(local|dev|prod|production|development)$|credencial' || true)
+          if [ -n "$prohibidos" ]; then echo "::error::Archivos que no deben estar en el repositorio:"; echo "$prohibidos"; exit 1; fi
+
+  backend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: backend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: backend/package-lock.json }
+      - run: npm ci --omit=dev
+      - run: npm test
+
+  esquema:
+    runs-on: ubuntu-latest
+    services:
+      postgres:
+        image: postgres:16
+        env: { POSTGRES_PASSWORD: postgres }
+        ports: ["5432:5432"]
+        options: >-
+          --health-cmd "pg_isready -U postgres" --health-interval 5s --health-timeout 5s --health-retries 10
+    steps:
+      - uses: actions/checkout@v4
+      - run: psql -v ON_ERROR_STOP=1 -q -f db/instalacion_completa.sql postgresql://postgres:postgres@localhost:5432/postgres
+      - name: Las migraciones se pueden repetir sin error (idempotencia)
+        run: for f in db/migraciones/*.sql; do psql -v ON_ERROR_STOP=1 -q -f "$f" postgresql://postgres:postgres@localhost:5432/postgres; done
+
+  frontend:
+    runs-on: ubuntu-latest
+    defaults: { run: { working-directory: frontend } }
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 22, cache: npm, cache-dependency-path: frontend/package-lock.json }
+      - run: npm ci
+      - run: npm run build
+
+  imagenes:
+    needs: [seguridad, backend, esquema, frontend]
+    if: github.event_name == 'push'
+    runs-on: ubuntu-latest
+    permissions: { contents: read, packages: write }
+    env:
+      TAG: ${{ github.ref_name == 'main' && 'prod' || 'dev' }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: docker/setup-qemu-action@v3
+      - uses: docker/setup-buildx-action@v3
+      - uses: docker/login-action@v3
+        with: { registry: ghcr.io, username: "${{ github.actor }}", password: "${{ secrets.GITHUB_TOKEN }}" }
+      - id: owner
+        run: echo "valor=$(echo '${{ github.repository_owner }}' | tr '[:upper:]' '[:lower:]')" >> "$GITHUB_OUTPUT"
+      - uses: docker/build-push-action@v6
+        with:
+          context: backend
+          platforms: linux/amd64
+          push: true
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          tags: |
+            ghcr.io/${{ steps.owner.outputs.valor }}/farmaclick-api:${{ env.TAG }}
+            ghcr.io/${{ steps.owner.outputs.valor }}/farmaclick-api:${{ github.sha }}
+      - uses: docker/build-push-action@v6
+        with:
+          context: frontend
+          platforms: linux/amd64
+          push: true
+          labels: |
+            org.opencontainers.image.source=https://github.com/${{ github.repository }}
+          tags: |
+            ghcr.io/${{ steps.owner.outputs.valor }}/farmaclick-web:${{ env.TAG }}
+            ghcr.io/${{ steps.owner.outputs.valor }}/farmaclick-web:${{ github.sha }}
+
+  desplegar:
+    needs: imagenes
+    runs-on: ubuntu-latest
+    # Un solo despliegue a la vez por entorno: si se suben dos commits seguidos (o se re-ejecuta un job), el segundo
+    # espera a que termine el primero. Dos "docker compose up" simultáneos en la misma VM chocan entre sí
+    # ("Conflict" o "removal ... already in progress").
+    concurrency:
+      group: desplegar-${{ github.ref_name }}
+      cancel-in-progress: false
+    env:
+      VM_HOST: ${{ github.ref_name == 'main' && secrets.PROD_VM_HOST || secrets.DEV_VM_HOST }}
+      VM_USER: ${{ github.ref_name == 'main' && secrets.PROD_VM_USER || secrets.DEV_VM_USER }}
+      VM_SSH_KEY: ${{ github.ref_name == 'main' && secrets.PROD_VM_SSH_KEY || secrets.DEV_VM_SSH_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Preparar clave SSH
+        run: |
+          install -m 700 -d ~/.ssh
+          echo "${{ env.VM_SSH_KEY }}" > ~/.ssh/id_deploy && chmod 600 ~/.ssh/id_deploy
+          ssh-keyscan -H "${{ env.VM_HOST }}" >> ~/.ssh/known_hosts
+      - name: Copiar docker-compose.yml y reiniciar servicios
+        run: |
+          # 1. Transformamos el nombre de usuario a minúsculas
+          OWNER_LOWER=$(echo "${{ github.repository_owner }}" | tr '[:upper:]' '[:lower:]')
+          # 2. Definimos si usamos la imagen de 'dev' o 'prod' según la rama actual
+          TAG_ENV=${{ github.ref_name == 'main' && 'prod' || 'dev' }}
+          # 3. Preparamos la carpeta y copiamos el archivo original
+          ssh -i ~/.ssh/id_deploy ${{ env.VM_USER }}@${{ env.VM_HOST }} "mkdir -p ~/farmaclick"
+          scp -i ~/.ssh/id_deploy deploy/docker-compose.yml ${{ env.VM_USER }}@${{ env.VM_HOST }}:~/farmaclick/docker-compose.yml
+          # 4. Ejecutamos Docker inyectando ambas variables. Antes de levantar se eliminan los contenedores temporales
+          #    "<id>_farmaclick-..." que deja un despliegue interrumpido: si quedan, el siguiente falla con "Conflict".
+          #    Si Docker aún está terminando de borrar un contenedor, se espera 15 s y se reintenta una vez.
+          ssh -i ~/.ssh/id_deploy ${{ env.VM_USER }}@${{ env.VM_HOST }} "cd ~/farmaclick && export GHCR_OWNER=$OWNER_LOWER IMAGE_TAG=$TAG_ENV && docker compose pull && (docker ps -aq --filter 'name=_farmaclick-' | xargs -r docker rm -f) && (docker compose up -d --remove-orphans || (sleep 15 && docker compose up -d --remove-orphans)) && docker image prune -f"
+      - name: Verificar que la API responde
+        run: |
+          sleep 10
+          ssh -i ~/.ssh/id_deploy ${{ env.VM_USER }}@${{ env.VM_HOST }} "curl -fsS http://localhost/api/health"
