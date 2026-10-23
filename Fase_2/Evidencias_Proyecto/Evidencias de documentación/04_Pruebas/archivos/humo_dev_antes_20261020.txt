@@ -1,0 +1,26 @@
+== FarmaClick · pruebas sobre http://155.181.171.118 · 20-10-2026 16:46
+-- Humo
+  [OK]   CP-INT-01 API viva /api/health (HTTP 200)
+  [OK]   CP-INT-02 Base de datos /api/health/db (HTTP 200)
+-- Autenticación
+  [OK]   CP-SEG-01 Login con clave incorrecta (HTTP 401)
+  [OK]   CP-SEG-02 Login con correo inválido (validación zod) (HTTP 400)
+  [OK]   CP-SEG-03 Ruta protegida sin token (HTTP 401)
+  [OK]   CP-SEG-04 Token falso (HTTP 401)
+  [OK]   CP-INT-03 Login del Administrador
+-- Autorización por rol
+  [OK]   CP-INT-04 Admin: /api/auth/me (HTTP 200)
+  [OK]   CP-INT-05 Admin: stock (HTTP 200)
+  [OK]   CP-INT-06 Admin: dashboard resumen (HTTP 200)
+  [OK]   CP-INT-07 Admin: usuarios (HTTP 200)
+  [OK]   CP-SEG-05 Vendedor NO accede a usuarios (HTTP 403)
+  [OK]   CP-SEG-06 Vendedor NO accede a inventario (escritura) (HTTP 403)
+  [OK]   CP-INT-08 Vendedor: turno de caja (pos) (HTTP 200)
+-- Entradas maliciosas
+  [OK]   CP-SEG-07 Inyección SQL en búsqueda no rompe la API (HTTP 200)
+  [OK]   CP-SEG-08 Identificador inválido (HTTP 400)
+-- Cabeceras de seguridad (contenedor web)
+  [INFO] CP-SEG-09 cabecera X-Content-Type-Options: nosniff no presente (normal en local: Vite no usa Nginx)
+  [INFO] CP-SEG-09 cabecera X-Frame-Options: DENY no presente (normal en local: Vite no usa Nginx)
+  [INFO] CP-SEG-09 cabecera Referrer-Policy no presente (normal en local: Vite no usa Nginx)
+== Resultado: 16 aprobadas, 0 fallidas

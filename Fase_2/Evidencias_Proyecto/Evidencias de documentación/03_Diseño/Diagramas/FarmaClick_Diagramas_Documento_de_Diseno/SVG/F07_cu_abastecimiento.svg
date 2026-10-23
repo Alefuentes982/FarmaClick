@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1700" height="1000" viewBox="0 0 1700 1000"><defs>
+<linearGradient id="g_pres" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF2FD"/><stop offset="1" stop-color="#D2E4FA"/></linearGradient>
+<linearGradient id="g_app" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1E0"/><stop offset="1" stop-color="#FFDDB8"/></linearGradient>
+<linearGradient id="g_data" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8F8EE"/><stop offset="1" stop-color="#CBEDD8"/></linearGradient>
+<linearGradient id="g_infra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEEF3"/></linearGradient>
+<linearGradient id="g_ext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF9DA"/><stop offset="1" stop-color="#FFEDA0"/></linearGradient>
+<linearGradient id="g_ci" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3ECFB"/><stop offset="1" stop-color="#E2D2F4"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1EE"/><stop offset="1" stop-color="#FFD9D1"/></linearGradient>
+<linearGradient id="g_teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3F4F4"/><stop offset="1" stop-color="#C5E8E8"/></linearGradient>
+<filter id="sh" x="-10%" y="-10%" width="125%" height="135%"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#1F2A44" flood-opacity="0.16"/></filter>
+<filter id="sh2" x="-10%" y="-10%" width="125%" height="135%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1F2A44" flood-opacity="0.14"/></filter>
+<radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#EEF2F8"/></radialGradient>
+<pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#C9D2E2"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F3864"/></marker>
+<marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7B52AB"/></marker>
+<marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/></marker>
+<marker id="ar4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E9E5F"/></marker>
+<marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L11,6 L0,12" fill="none" stroke="#1F3864" stroke-width="1.4"/></marker>
+<marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L11,6 L0,12 z" fill="#fff" stroke="#1F3864" stroke-width="1.3"/></marker>
+</defs>
+<rect width="1700" height="1000" fill="url(#bg)"/><rect width="1700" height="1000" fill="url(#dots)" opacity="0.5"/>
+<text x="40" y="44" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#1F3864" text-anchor="start" font-weight="bold">Casos de uso · Catálogo, abastecimiento e inventario</text>
+<text x="40" y="66" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#666" text-anchor="start">Épicas E03–E05</text>
+<rect x="300" y="85" width="1080" height="880" rx="18" fill="#FFFFFF" fill-opacity="0.75" stroke="#1F3864" stroke-width="2"/>
+<text x="320" y="113" font-family="DejaVu Sans, Arial, sans-serif" font-size="14" fill="#1F3864" text-anchor="start" font-weight="bold">FarmaClick · Catálogo, compras e inventario</text>
+<ellipse cx="520" cy="160" rx="86.3" ry="18.0" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="164" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Gestionar proveedores</text>
+<ellipse cx="880" cy="160" rx="53.3" ry="18.0" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="880" y="164" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Validar RUT</text>
+<ellipse cx="520" cy="250" rx="79.69999999999999" ry="18.0" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="254" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Gestionar productos</text>
+<ellipse cx="880" cy="250" rx="83.0" ry="25.0" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="880" y="247" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Calcular precio</text>
+<text x="880" y="261" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">desde costo y margen</text>
+<ellipse cx="520" cy="340" rx="79.69999999999999" ry="25.0" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="337" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Asociar proveedores</text>
+<text x="520" y="351" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">a un producto</text>
+<ellipse cx="520" cy="440" rx="109.39999999999999" ry="25.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="437" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Gestionar orden de compra</text>
+<text x="520" y="451" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">(borrador, emitir, cancelar)</text>
+<ellipse cx="880" cy="440" rx="102.8" ry="18.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="880" y="444" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Buscar producto (combobox)</text>
+<ellipse cx="1210" cy="360" rx="89.6" ry="18.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="1210" y="364" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Descargar PDF de la OC</text>
+<ellipse cx="520" cy="540" rx="76.4" ry="25.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="537" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Recibir mercadería</text>
+<text x="520" y="551" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">(total o parcial)</text>
+<ellipse cx="880" cy="540" rx="63.199999999999996" ry="25.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="880" y="537" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Registrar lote</text>
+<text x="880" y="551" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">y vencimiento</text>
+<ellipse cx="520" cy="630" rx="73.1" ry="25.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="627" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Consultar stock</text>
+<text x="520" y="641" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">y definir mínimos</text>
+<ellipse cx="520" cy="720" rx="69.8" ry="18.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="724" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Consultar kardex</text>
+<ellipse cx="520" cy="800" rx="96.19999999999999" ry="18.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="804" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Registrar ajuste o merma</text>
+<ellipse cx="520" cy="890" rx="83.0" ry="25.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="520" y="887" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Gestionar lotes y</text>
+<text x="520" y="901" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">dar de baja vencidos</text>
+<ellipse cx="1210" cy="890" rx="102.8" ry="25.0" fill="url(#g_teal)" stroke="#2B8A89" stroke-width="1.5" filter="url(#sh2)"/>
+<text x="1210" y="887" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">Dar de baja lotes vencidos</text>
+<text x="1210" y="901" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.8" fill="#1B2438" text-anchor="middle">(job diario 05:00 UTC)</text>
+<line x1="606.3" y1="160.0" x2="826.7" y2="160.0" stroke="#1F3864" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="682.5" y="151.0" width="68" height="15" rx="4" fill="#fff" fill-opacity="0.9"/>
+<text x="716.5" y="163.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.8" fill="#1F3864" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="599.7" y1="250.0" x2="797.0" y2="250.0" stroke="#1F3864" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="664.35" y="241.0" width="68" height="15" rx="4" fill="#fff" fill-opacity="0.9"/>
+<text x="698.35" y="253.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.8" fill="#1F3864" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="629.4" y1="440.0" x2="777.2" y2="440.0" stroke="#1F3864" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="669.3" y="431.0" width="68" height="15" rx="4" fill="#fff" fill-opacity="0.9"/>
+<text x="703.3" y="443.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.8" fill="#1F3864" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="596.4" y1="540.0" x2="816.8" y2="540.0" stroke="#1F3864" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="672.5999999999999" y="531.0" width="68" height="15" rx="4" fill="#fff" fill-opacity="0.9"/>
+<text x="706.5999999999999" y="543.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.8" fill="#1F3864" text-anchor="middle" font-style="italic">«include»</text>
+<line x1="1132.4" y1="369.0" x2="617.6" y2="428.7" stroke="#1F3864" stroke-width="1.3" stroke-dasharray="6 4" marker-end="url(#open)"/>
+<rect x="840.9790911655891" y="389.84300392283023" width="68" height="15" rx="4" fill="#fff" fill-opacity="0.9"/>
+<text x="874.9790911655891" y="401.84300392283023" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.8" fill="#1F3864" text-anchor="middle" font-style="italic">«extend»</text>
+<g stroke="#1F3864" stroke-width="2.2" fill="none" stroke-linecap="round"><circle cx="150" cy="480" r="11" fill="#fff"/><line x1="150" y1="491" x2="150" y2="520"/><line x1="132" y1="501" x2="168" y2="501"/><line x1="150" y1="520" x2="135" y2="542"/><line x1="150" y1="520" x2="165" y2="542"/></g>
+<text x="150" y="560" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="middle" font-weight="bold">Bodega /</text>
+<text x="150" y="574" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="middle" font-weight="bold">encargado de compras</text>
+<g stroke="#1F3864" stroke-width="2.2" fill="none" stroke-linecap="round"><circle cx="150" cy="800" r="11" fill="#fff"/><line x1="150" y1="811" x2="150" y2="840"/><line x1="132" y1="821" x2="168" y2="821"/><line x1="150" y1="840" x2="135" y2="862"/><line x1="150" y1="840" x2="165" y2="862"/></g>
+<text x="150" y="880" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="middle" font-weight="bold">Administrador</text>
+<g stroke="#6B7280" stroke-width="2.2" fill="none" stroke-linecap="round"><circle cx="1550" cy="850" r="11" fill="#fff"/><line x1="1550" y1="861" x2="1550" y2="890"/><line x1="1532" y1="871" x2="1568" y2="871"/><line x1="1550" y1="890" x2="1535" y2="912"/><line x1="1550" y1="890" x2="1565" y2="912"/></g>
+<text x="1550" y="930" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="middle" font-weight="bold">Reloj</text>
+<text x="1550" y="944" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#666" text-anchor="middle" font-style="italic">pg_cron</text>
+<line x1="150" y1="800" x2="150" y2="600" stroke="#1F3864" stroke-width="1.4" marker-end="url(#tri)"/>
+<line x1="175" y1="520" x2="503.1" y2="177.7" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="497.9" y2="267.3" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="478.9" y2="361.4" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="443.2" y2="457.8" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="444.8" y2="535.6" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="466.5" y2="613.0" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="491.6" y2="703.6" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="498.4" y2="782.5" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="175" y1="520" x2="497.6" y2="865.9" stroke="#4A5163" stroke-width="1.3"/>
+<line x1="1525" y1="890" x2="1312.8" y2="890.0" stroke="#6B7280" stroke-width="1.3"/>
+<text x="840" y="985" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#444" text-anchor="middle" font-style="italic">La descarga del PDF extiende la gestión de la OC. El Administrador hereda todos los casos de Bodega.</text></svg>
