@@ -1,0 +1,1935 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3001" height="2693" viewBox="0 0 3001 2693" font-family="DejaVu Sans,Verdana,sans-serif">
+<rect width="100%" height="100%" fill="white"/>
+<text x="50" y="62" font-size="34" font-weight="bold" fill="#1B2A41">FarmaClick · Modelo entidad-relación</text>
+<text x="50" y="96" font-size="16" fill="#44506A">39 tablas · 65 relaciones · PostgreSQL (Supabase), migraciones 001 a 010 · PK clave primaria · FK clave foránea · UQ único · * obligatorio</text>
+<text x="50" y="122" font-size="14" fill="#44506A">Cada relación se dibuja en el módulo de la tabla hija, rotulada con la columna que la origina. La caja punteada es una tabla de otro módulo, repetida solo como referencia.</text>
+<rect x="50" y="140" width="64" height="26" rx="6" fill="white" stroke="#1F3864"/><text x="82" y="158" font-size="12" text-anchor="middle" fill="#1F3864">Hijo</text>
+<rect x="264" y="140" width="64" height="26" rx="6" fill="white" stroke="#1F3864"/><text x="296" y="158" font-size="12" text-anchor="middle" fill="#1F3864">Padre</text>
+<line x1="114" y1="153" x2="264" y2="153" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="114" y1="145" x2="128" y2="153" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="114" y1="153" x2="128" y2="153" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="114" y1="161" x2="128" y2="153" stroke="#1F3864" stroke-width="1.4"/>
+<circle cx="137" cy="153" r="4.5" fill="white" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="258" y1="145" x2="258" y2="161" stroke="#1F3864" stroke-width="1.6"/>
+<line x1="251" y1="145" x2="251" y2="161" stroke="#1F3864" stroke-width="1.6"/>
+<text x="350" y="157" font-size="13" fill="#333333">Obligatoria: cada hijo tiene un padre; un padre puede tener cero o muchos hijos.</text>
+<rect x="50" y="174" width="64" height="26" rx="6" fill="white" stroke="#1F3864"/><text x="82" y="192" font-size="12" text-anchor="middle" fill="#1F3864">Hijo</text>
+<rect x="264" y="174" width="64" height="26" rx="6" fill="white" stroke="#1F3864"/><text x="296" y="192" font-size="12" text-anchor="middle" fill="#1F3864">Padre</text>
+<line x1="114" y1="187" x2="264" y2="187" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="114" y1="179" x2="128" y2="187" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="114" y1="187" x2="128" y2="187" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="114" y1="195" x2="128" y2="187" stroke="#1F3864" stroke-width="1.4"/>
+<circle cx="137" cy="187" r="4.5" fill="white" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="258" y1="179" x2="258" y2="195" stroke="#1F3864" stroke-width="1.6"/><circle cx="247" cy="187" r="4.5" fill="white" stroke="#1F3864" stroke-width="1.4"/>
+<text x="350" y="191" font-size="13" fill="#333333">Opcional: la columna admite nulos, así que el hijo puede no tener padre.</text>
+<rect x="50" y="208" width="64" height="26" rx="6" fill="white" stroke="#1F3864"/><text x="82" y="226" font-size="12" text-anchor="middle" fill="#1F3864">Hijo</text>
+<rect x="264" y="208" width="64" height="26" rx="6" fill="white" stroke="#1F3864"/><text x="296" y="226" font-size="12" text-anchor="middle" fill="#1F3864">Padre</text>
+<line x1="114" y1="221" x2="264" y2="221" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="120" y1="213" x2="120" y2="229" stroke="#1F3864" stroke-width="1.6"/><circle cx="131" cy="221" r="4.5" fill="white" stroke="#1F3864" stroke-width="1.4"/>
+<line x1="258" y1="213" x2="258" y2="229" stroke="#1F3864" stroke-width="1.6"/>
+<line x1="251" y1="213" x2="251" y2="229" stroke="#1F3864" stroke-width="1.6"/>
+<text x="350" y="225" font-size="13" fill="#333333">Uno a uno: el padre tiene como máximo un hijo (la columna es única).</text>
+<rect x="50" y="262" width="1484" height="570" rx="10" fill="white" stroke="#3D6C94" stroke-width="2"/>
+<rect x="50" y="262" width="1484" height="44" rx="10" fill="#3D6C94"/><rect x="50" y="296" width="1484" height="10" fill="#3D6C94"/>
+<text x="68" y="291" font-size="20" font-weight="bold" fill="white">Accesos y Organización</text>
+<text x="1516" y="291" font-size="14" fill="white" text-anchor="end">8 tablas · 8 relaciones</text>
+<svg x="50" y="306" width="1484" height="526" viewBox="0.00 0.00 1484.00 525.50">
+<g id="m1_graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 507.5)">
+<title>G</title>
+
+<!-- rol -->
+<g id="m1_node1" class="node">
+<title>rol</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="686.5,-283 686.5,-339 820.5,-339 820.5,-283 686.5,-283"/>
+<polygon fill="#3d6c94" stroke="transparent" points="687.5,-318 687.5,-338 819.5,-338 819.5,-318 687.5,-318"/>
+<text text-anchor="start" x="690.5" y="-325.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">rol</text>
+<text text-anchor="start" x="690.5" y="-307.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="709.5" y="-308" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="761.5" y="-307.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="690.5" y="-290.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="709.5" y="-290" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="761.5" y="-290.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<polygon fill="none" stroke="#3d6c94" points="686.5,-283 686.5,-339 820.5,-339 820.5,-283 686.5,-283"/>
+</g>
+<!-- modulo -->
+<g id="m1_node2" class="node">
+<title>modulo</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="683.5,-379.5 683.5,-452.5 823.5,-452.5 823.5,-379.5 683.5,-379.5"/>
+<polygon fill="#3d6c94" stroke="transparent" points="684.5,-431 684.5,-451 822.5,-451 822.5,-431 684.5,-431"/>
+<text text-anchor="start" x="687.5" y="-438.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">modulo</text>
+<text text-anchor="start" x="687.5" y="-420.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="706.5" y="-421" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="758.5" y="-420.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="706.5" y="-403" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="758.5" y="-403.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(100)</text>
+<text text-anchor="start" x="687.5" y="-386.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="706.5" y="-386" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">clave *</text>
+<text text-anchor="start" x="758.5" y="-386.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<polygon fill="none" stroke="#3d6c94" points="683.5,-379.5 683.5,-452.5 823.5,-452.5 823.5,-379.5 683.5,-379.5"/>
+</g>
+<!-- rol_permiso -->
+<g id="m1_node3" class="node">
+<title>rol_permiso</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="361.5,-412.5 361.5,-485.5 483.5,-485.5 483.5,-412.5 361.5,-412.5"/>
+<polygon fill="#3d6c94" stroke="transparent" points="362.5,-464 362.5,-484 482.5,-484 482.5,-464 362.5,-464"/>
+<text text-anchor="start" x="365.5" y="-471.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">rol_permiso</text>
+<text text-anchor="start" x="365.5" y="-453.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="393.5" y="-454" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">rol_id</text>
+<text text-anchor="start" x="458.5" y="-453.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="365.5" y="-436.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="393.5" y="-437" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">modulo_id</text>
+<text text-anchor="start" x="458.5" y="-436.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="393.5" y="-419" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">permitido *</text>
+<text text-anchor="start" x="458.5" y="-419.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#3d6c94" points="361.5,-412.5 361.5,-485.5 483.5,-485.5 483.5,-412.5 361.5,-412.5"/>
+</g>
+<!-- rol_permiso&#45;&gt;rol -->
+<g id="m1_edge2" class="edge">
+<title>rol_permiso:e&#45;&gt;rol:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M499.83,-456.24C542.29,-457.4 563.31,-461.35 603,-434 655.33,-397.95 623.21,-317.39 677.44,-309.61"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="492.5,-456.13 483.56,-451.95 488,-456.07 483.5,-456 483.5,-456 483.5,-456 488,-456.07 483.44,-460.05 492.5,-456.13 492.5,-456.13"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="496.1" cy="-456.18" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="685.3,-304.57 685.9,-313.55 684.11,-313.67 683.51,-304.69 685.3,-304.57"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="686.5,-309 682.01,-309.3 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="680.81,-304.87 681.41,-313.85 679.62,-313.97 679.02,-304.99 680.81,-304.87"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="682.01,-309.3 677.52,-309.6 "/>
+<text text-anchor="start" x="565" y="-457.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">rol_id</text>
+</g>
+<!-- rol_permiso&#45;&gt;modulo -->
+<g id="m1_edge3" class="edge">
+<title>rol_permiso:e&#45;&gt;modulo:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M499.83,-436.73C518.26,-433.61 527.31,-425.67 552,-423 606.93,-417.06 623.29,-422.35 674.29,-422.95"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="492.47,-437.3 483.18,-433.96 487.99,-437.65 483.5,-438 483.5,-438 483.5,-438 487.99,-437.65 483.82,-442.04 492.47,-437.3 492.47,-437.3"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="496.06" cy="-437.02" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="682.63,-418.49 682.57,-427.49 680.77,-427.48 680.83,-418.48 682.63,-418.49"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="683.5,-423 679,-422.97 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="678.13,-418.47 678.07,-427.47 676.27,-427.46 676.33,-418.46 678.13,-418.47"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="679,-422.97 674.5,-422.95 "/>
+<text text-anchor="start" x="554" y="-425.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">modulo_id</text>
+</g>
+<!-- usuario -->
+<g id="m1_node4" class="node">
+<title>usuario</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="346,-171.5 346,-312.5 499,-312.5 499,-171.5 346,-171.5"/>
+<polygon fill="#3d6c94" stroke="transparent" points="347.5,-291 347.5,-311 498.5,-311 498.5,-291 347.5,-291"/>
+<text text-anchor="start" x="350.5" y="-298.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">usuario</text>
+<text text-anchor="start" x="350.5" y="-280.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="369.5" y="-281" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="434.5" y="-280.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="369.5" y="-263" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="434.5" y="-263.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(150)</text>
+<text text-anchor="start" x="350.5" y="-246.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="369.5" y="-246" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">correo *</text>
+<text text-anchor="start" x="434.5" y="-246.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(150)</text>
+<text text-anchor="start" x="350.5" y="-229.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="369.5" y="-229" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">rol_id *</text>
+<text text-anchor="start" x="434.5" y="-229.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="350.5" y="-212.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="369.5" y="-212" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sucursal_id</text>
+<text text-anchor="start" x="434.5" y="-212.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="369.5" y="-195" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activo *</text>
+<text text-anchor="start" x="434.5" y="-195.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="369.5" y="-178" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">creado_en *</text>
+<text text-anchor="start" x="434.5" y="-178.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<polygon fill="none" stroke="#3d6c94" points="346,-171.5 346,-312.5 499,-312.5 499,-171.5 346,-171.5"/>
+</g>
+<!-- usuario&#45;&gt;rol -->
+<g id="m1_edge5" class="edge">
+<title>usuario:e&#45;&gt;rol:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M515.92,-231.93C588.01,-240.4 601.31,-304.02 677.41,-308.72"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="508.49,-231.51 499.73,-226.96 503.99,-231.25 499.5,-231 499.5,-231 499.5,-231 503.99,-231.25 499.27,-235.04 508.49,-231.51 508.49,-231.51"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="512.08" cy="-231.71" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="685.74,-304.47 685.46,-313.47 683.66,-313.42 683.94,-304.42 685.74,-304.47"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="686.5,-309 682,-308.86 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="681.24,-304.34 680.97,-313.33 679.17,-313.28 679.44,-304.28 681.24,-304.34"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="682,-308.86 677.5,-308.73 "/>
+<text text-anchor="start" x="565" y="-278.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">rol_id</text>
+</g>
+<!-- sucursal -->
+<g id="m1_node8" class="node">
+<title>sucursal</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="656,-85 656,-243 851,-243 851,-85 656,-85"/>
+<polygon fill="#3d6c94" stroke="transparent" points="657.5,-222 657.5,-242 850.5,-242 850.5,-222 657.5,-222"/>
+<text text-anchor="start" x="660.5" y="-229.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">sucursal</text>
+<text text-anchor="start" x="660.5" y="-211.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="676.5" y="-212" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="786.5" y="-211.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="676.5" y="-194" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="786.5" y="-194.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(150)</text>
+<text text-anchor="start" x="676.5" y="-177" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">direccion</text>
+<text text-anchor="start" x="786.5" y="-177.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(200)</text>
+<text text-anchor="start" x="676.5" y="-160" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">telefono</text>
+<text text-anchor="start" x="786.5" y="-160.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(30)</text>
+<text text-anchor="start" x="676.5" y="-143" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activa *</text>
+<text text-anchor="start" x="786.5" y="-143.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="676.5" y="-126" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">habilita_venta_web *</text>
+<text text-anchor="start" x="786.5" y="-126.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="660.5" y="-109.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="676.5" y="-109" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">comuna_id *</text>
+<text text-anchor="start" x="786.5" y="-109.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="676.5" y="-92" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">farmacia_de_turno *</text>
+<text text-anchor="start" x="786.5" y="-92.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#3d6c94" points="656,-85 656,-243 851,-243 851,-85 656,-85"/>
+</g>
+<!-- usuario&#45;&gt;sucursal -->
+<g id="m1_edge6" class="edge">
+<title>usuario:e&#45;&gt;sucursal:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M516.04,-214C568.93,-214 589.85,-214 644.67,-214"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="508.5,-214 499.5,-209.95 504,-214 499.5,-214 499.5,-214 499.5,-214 504,-214 499.5,-218.05 508.5,-214 508.5,-214"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="512.1" cy="-214" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="655.6,-209.5 655.6,-218.5 653.8,-218.5 653.8,-209.5 655.6,-209.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="656.5,-214 652,-214 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="648.4" cy="-214" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="552" y="-216.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- cliente -->
+<g id="m1_node5" class="node">
+<title>cliente</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="8,-114.5 8,-221.5 194,-221.5 194,-114.5 8,-114.5"/>
+<polygon fill="#3d6c94" stroke="transparent" points="9,-200 9,-220 193,-220 193,-200 9,-200"/>
+<text text-anchor="start" x="12" y="-207.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">cliente</text>
+<text text-anchor="start" x="12" y="-189.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="40" y="-190" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">usuario_id</text>
+<text text-anchor="start" x="129" y="-189.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-172.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="40" y="-172" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">rut</text>
+<text text-anchor="start" x="129" y="-172.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(12)</text>
+<text text-anchor="start" x="40" y="-155" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">telefono</text>
+<text text-anchor="start" x="129" y="-155.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(30)</text>
+<text text-anchor="start" x="40" y="-138" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">direccion_cliente</text>
+<text text-anchor="start" x="129" y="-138.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(200)</text>
+<text text-anchor="start" x="12" y="-121.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="40" y="-121" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">comuna_id</text>
+<text text-anchor="start" x="129" y="-121.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<polygon fill="none" stroke="#3d6c94" points="8,-114.5 8,-221.5 194,-221.5 194,-114.5 8,-114.5"/>
+</g>
+<!-- cliente&#45;&gt;usuario -->
+<g id="m1_edge7" class="edge">
+<title>cliente:e&#45;&gt;usuario:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M205.81,-192.73C269.73,-200.97 271.68,-276.12 337.27,-282.56"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="194.62,-196.55 195.18,-187.56 196.97,-187.68 196.42,-196.66 194.62,-196.55"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="194,-192 198.49,-192.28 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="202.08" cy="-192.5" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="345.82,-278.46 345.39,-287.45 343.59,-287.37 344.02,-278.38 345.82,-278.46"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="346.5,-283 342.01,-282.79 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="341.32,-278.25 340.89,-287.24 339.09,-287.15 339.52,-278.16 341.32,-278.25"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="342.01,-282.79 337.51,-282.57 "/>
+<text text-anchor="start" x="247" y="-263.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- comuna -->
+<g id="m1_node7" class="node">
+<title>comuna</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="1007,-21.5 1007,-94.5 1152,-94.5 1152,-21.5 1007,-21.5"/>
+<polygon fill="#3d6c94" stroke="transparent" points="1008.5,-73 1008.5,-93 1151.5,-93 1151.5,-73 1008.5,-73"/>
+<text text-anchor="start" x="1011.5" y="-80.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">comuna</text>
+<text text-anchor="start" x="1011.5" y="-62.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="1027.5" y="-63" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="1087.5" y="-62.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="1027.5" y="-45" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="1087.5" y="-45.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(100)</text>
+<text text-anchor="start" x="1011.5" y="-28.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="1027.5" y="-28" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">region_id *</text>
+<text text-anchor="start" x="1087.5" y="-28.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<polygon fill="none" stroke="#3d6c94" points="1007,-21.5 1007,-94.5 1152,-94.5 1152,-21.5 1007,-21.5"/>
+</g>
+<!-- cliente&#45;&gt;comuna -->
+<g id="m1_edge8" class="edge">
+<title>cliente:e&#45;&gt;comuna:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M210.34,-122.9C400.14,-120.56 450.54,-77.56 648,-65 803.41,-55.11 845.6,-64.5 995.56,-64.98"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="203,-122.95 193.98,-118.95 198.5,-122.97 194,-123 194,-123 194,-123 198.5,-122.97 194.02,-127.05 203,-122.95 203,-122.95"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="206.6" cy="-122.92" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1006.61,-60.5 1006.59,-69.5 1004.79,-69.5 1004.81,-60.5 1006.61,-60.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1007.5,-65 1003,-64.99 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="999.4" cy="-64.99" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="552.5" y="-77.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">comuna_id</text>
+</g>
+<!-- region -->
+<g id="m1_node6" class="node">
+<title>region</title>
+<polygon fill="#e8f0f6" stroke="transparent" points="1300,-4 1300,-60 1440,-60 1440,-4 1300,-4"/>
+<polygon fill="#3d6c94" stroke="transparent" points="1301,-39 1301,-59 1439,-59 1439,-39 1301,-39"/>
+<text text-anchor="start" x="1304" y="-46.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">region</text>
+<text text-anchor="start" x="1304" y="-28.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="1323" y="-29" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="1375" y="-28.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="1304" y="-11.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="1323" y="-11" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="1375" y="-11.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(100)</text>
+<polygon fill="none" stroke="#3d6c94" points="1300,-4 1300,-60 1440,-60 1440,-4 1300,-4"/>
+</g>
+<!-- comuna&#45;&gt;region -->
+<g id="m1_edge1" class="edge">
+<title>comuna:e&#45;&gt;region:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M1168.71,-30C1218.54,-30 1238.12,-30 1290.87,-30"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1161.5,-30 1152.5,-25.95 1157,-30 1152.5,-30 1152.5,-30 1152.5,-30 1157,-30 1152.5,-34.05 1161.5,-30 1161.5,-30"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="1165.1" cy="-30" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1299.1,-25.5 1299.1,-34.5 1297.3,-34.5 1297.3,-25.5 1299.1,-25.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1300,-30 1295.5,-30 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1294.6,-25.5 1294.6,-34.5 1292.8,-34.5 1292.8,-25.5 1294.6,-25.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1295.5,-30 1291,-30 "/>
+<text text-anchor="start" x="1205" y="-32.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">region_id</text>
+</g>
+<!-- sucursal&#45;&gt;comuna -->
+<g id="m1_edge4" class="edge">
+<title>sucursal:e&#45;&gt;comuna:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M867.76,-110.16C923.28,-104.22 939.5,-68.58 998.48,-65.25"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="860.49,-110.54 851.29,-106.96 855.99,-110.77 851.5,-111 851.5,-111 851.5,-111 855.99,-110.77 851.71,-115.04 860.49,-110.54 860.49,-110.54"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="864.08" cy="-110.35" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1006.48,-60.53 1006.72,-69.52 1004.93,-69.57 1004.68,-60.58 1006.48,-60.53"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1007.5,-65 1003,-65.12 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1001.98,-60.65 1002.23,-69.65 1000.43,-69.7 1000.18,-60.7 1001.98,-60.65"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1003,-65.12 998.5,-65.25 "/>
+<text text-anchor="start" x="904" y="-102.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">comuna_id</text>
+</g>
+</g>
+</svg>
+<rect x="50" y="892.0" width="1512" height="1099" rx="10" fill="white" stroke="#5C7F42" stroke-width="2"/>
+<rect x="50" y="892.0" width="1512" height="44" rx="10" fill="#5C7F42"/><rect x="50" y="926.0" width="1512" height="10" fill="#5C7F42"/>
+<text x="68" y="921.0" font-size="20" font-weight="bold" fill="white">Catálogo y Stock</text>
+<text x="1544" y="921.0" font-size="14" fill="white" text-anchor="end">10 tablas · 17 relaciones</text>
+<svg x="50" y="936.0" width="1512" height="1055" viewBox="0.00 0.00 1512.00 1055.00">
+<g id="m2_graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 1037)">
+<title>G</title>
+
+<!-- categoria -->
+<g id="m2_node1" class="node">
+<title>categoria</title>
+<polygon fill="#eef3e7" stroke="transparent" points="1269.5,-613 1269.5,-737 1463.5,-737 1463.5,-613 1269.5,-613"/>
+<polygon fill="#5c7f42" stroke="transparent" points="1270.5,-716 1270.5,-736 1462.5,-736 1462.5,-716 1270.5,-716"/>
+<text text-anchor="start" x="1273.5" y="-723.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">categoria</text>
+<text text-anchor="start" x="1273.5" y="-705.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="1292.5" y="-706" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="1398.5" y="-705.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="1273.5" y="-688.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="1292.5" y="-688" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="1398.5" y="-688.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(100)</text>
+<text text-anchor="start" x="1292.5" y="-671" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activa *</text>
+<text text-anchor="start" x="1398.5" y="-671.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="1292.5" y="-654" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">margen_pesimista *</text>
+<text text-anchor="start" x="1398.5" y="-654.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(4,2)</text>
+<text text-anchor="start" x="1292.5" y="-637" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">margen_probable *</text>
+<text text-anchor="start" x="1398.5" y="-637.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(4,2)</text>
+<text text-anchor="start" x="1292.5" y="-620" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">margen_optimista *</text>
+<text text-anchor="start" x="1398.5" y="-620.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(4,2)</text>
+<polygon fill="none" stroke="#5c7f42" points="1269.5,-613 1269.5,-737 1463.5,-737 1463.5,-613 1269.5,-613"/>
+</g>
+<!-- condicion_venta -->
+<g id="m2_node2" class="node">
+<title>condicion_venta</title>
+<polygon fill="#eef3e7" stroke="transparent" points="1265,-483 1265,-573 1468,-573 1468,-483 1265,-483"/>
+<polygon fill="#5c7f42" stroke="transparent" points="1266.5,-552 1266.5,-572 1467.5,-572 1467.5,-552 1266.5,-552"/>
+<text text-anchor="start" x="1269.5" y="-559.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">condicion_venta</text>
+<text text-anchor="start" x="1269.5" y="-541.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="1288.5" y="-542" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="1409.5" y="-541.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="1269.5" y="-524.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="1288.5" y="-524" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="1409.5" y="-524.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="1288.5" y="-507" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">permite_venta_online *</text>
+<text text-anchor="start" x="1409.5" y="-507.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="1288.5" y="-490" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activa *</text>
+<text text-anchor="start" x="1409.5" y="-490.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#5c7f42" points="1265,-483 1265,-573 1468,-573 1468,-483 1265,-483"/>
+</g>
+<!-- producto -->
+<g id="m2_node3" class="node">
+<title>producto</title>
+<polygon fill="#eef3e7" stroke="transparent" points="857,-592.5 857,-835.5 1072,-835.5 1072,-592.5 857,-592.5"/>
+<polygon fill="#5c7f42" stroke="transparent" points="858.5,-814 858.5,-834 1071.5,-834 1071.5,-814 858.5,-814"/>
+<text text-anchor="start" x="861.5" y="-821.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">producto</text>
+<text text-anchor="start" x="861.5" y="-803.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="880.5" y="-804" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="1001.5" y="-803.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="861.5" y="-786.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="880.5" y="-786" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sku *</text>
+<text text-anchor="start" x="1001.5" y="-786.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="880.5" y="-769" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="1001.5" y="-769.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(200)</text>
+<text text-anchor="start" x="880.5" y="-752" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">costo *</text>
+<text text-anchor="start" x="1001.5" y="-752.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="880.5" y="-735" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">margen_utilidad *</text>
+<text text-anchor="start" x="1001.5" y="-735.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(4,2)</text>
+<text text-anchor="start" x="880.5" y="-718" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">precio</text>
+<text text-anchor="start" x="1001.5" y="-718.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="880.5" y="-701" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activo *</text>
+<text text-anchor="start" x="1001.5" y="-701.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="880.5" y="-684" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">stock_total_web *</text>
+<text text-anchor="start" x="1001.5" y="-684.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="880.5" y="-667" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">requiere_vencimiento *</text>
+<text text-anchor="start" x="1001.5" y="-667.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="880.5" y="-650" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">requiere_lote *</text>
+<text text-anchor="start" x="1001.5" y="-650.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="861.5" y="-633.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="880.5" y="-633" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">categoria_id *</text>
+<text text-anchor="start" x="1001.5" y="-633.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="861.5" y="-616.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="880.5" y="-616" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">condicion_venta_id *</text>
+<text text-anchor="start" x="1001.5" y="-616.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="880.5" y="-599" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">creado_en *</text>
+<text text-anchor="start" x="1001.5" y="-599.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<polygon fill="none" stroke="#5c7f42" points="857,-592.5 857,-835.5 1072,-835.5 1072,-592.5 857,-592.5"/>
+</g>
+<!-- producto&#45;&gt;categoria -->
+<g id="m2_edge2" class="edge">
+<title>producto:e&#45;&gt;categoria:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M1089.07,-635.82C1164.57,-643.54 1180.8,-703.32 1260.05,-707.74"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1081.49,-635.44 1072.7,-630.95 1076.99,-635.22 1072.5,-635 1072.5,-635 1072.5,-635 1076.99,-635.22 1072.3,-639.05 1081.49,-635.44 1081.49,-635.44"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="1085.08" cy="-635.62" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1268.72,-703.48 1268.48,-712.47 1266.68,-712.42 1266.92,-703.43 1268.72,-703.48"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1269.5,-708 1265,-707.88 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1264.23,-703.35 1263.98,-712.35 1262.18,-712.3 1262.43,-703.3 1264.23,-703.35"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1265,-707.88 1260.5,-707.75 "/>
+<text text-anchor="start" x="1141" y="-697.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">categoria_id</text>
+</g>
+<!-- producto&#45;&gt;condicion_venta -->
+<g id="m2_edge3" class="edge">
+<title>producto:e&#45;&gt;condicion_venta:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M1088.8,-617.17C1162.99,-609.34 1178.28,-548.75 1256.2,-544.26"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1081.49,-617.54 1072.29,-613.96 1076.99,-617.77 1072.5,-618 1072.5,-618 1072.5,-618 1076.99,-617.77 1072.71,-622.04 1081.49,-617.54 1081.49,-617.54"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="1085.08" cy="-617.36" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1264.47,-539.53 1264.73,-548.52 1262.93,-548.57 1262.67,-539.58 1264.47,-539.53"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1265.5,-544 1261,-544.13 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1259.98,-539.65 1260.23,-548.65 1258.43,-548.7 1258.18,-539.71 1259.98,-539.65"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1261,-544.13 1256.5,-544.25 "/>
+<text text-anchor="start" x="1125" y="-609.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">condicion_venta_id</text>
+</g>
+<!-- producto_proveedor -->
+<g id="m2_node4" class="node">
+<title>producto_proveedor</title>
+<polygon fill="#eef3e7" stroke="transparent" points="432.5,-925 432.5,-1015 634.5,-1015 634.5,-925 432.5,-925"/>
+<polygon fill="#5c7f42" stroke="transparent" points="433.5,-994 433.5,-1014 633.5,-1014 633.5,-994 433.5,-994"/>
+<text text-anchor="start" x="436.5" y="-1001.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">producto_proveedor</text>
+<text text-anchor="start" x="436.5" y="-983.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="464.5" y="-984" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">producto_id</text>
+<text text-anchor="start" x="563.5" y="-983.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="436.5" y="-966.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="464.5" y="-967" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">proveedor_id</text>
+<text text-anchor="start" x="563.5" y="-966.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="464.5" y="-949" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">costo_referencial *</text>
+<text text-anchor="start" x="563.5" y="-949.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="464.5" y="-932" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">es_principal *</text>
+<text text-anchor="start" x="563.5" y="-932.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#5c7f42" points="432.5,-925 432.5,-1015 634.5,-1015 634.5,-925 432.5,-925"/>
+</g>
+<!-- producto_proveedor&#45;&gt;producto -->
+<g id="m2_edge4" class="edge">
+<title>producto_proveedor:e&#45;&gt;producto:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M650.76,-986.39C715.76,-989.47 749.61,-1008.59 804,-964 858.76,-919.11 790.09,-815.84 848.4,-806.66"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="643.5,-986.22 634.6,-981.95 639,-986.11 634.5,-986 634.5,-986 634.5,-986 639,-986.11 634.4,-990.05 643.5,-986.22 643.5,-986.22"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="647.1" cy="-986.3" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="856.28,-801.58 856.93,-810.55 855.13,-810.68 854.48,-801.71 856.28,-801.58"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="857.5,-806 853.01,-806.32 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="851.79,-801.9 852.44,-810.88 850.64,-811.01 849.99,-802.03 851.79,-801.9"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="853.01,-806.32 848.52,-806.65 "/>
+<text text-anchor="start" x="720" y="-995.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">producto_id</text>
+</g>
+<!-- proveedor -->
+<g id="m2_node5" class="node">
+<title>proveedor</title>
+<polygon fill="#eef3e7" stroke="transparent" points="894.5,-875.5 894.5,-982.5 1034.5,-982.5 1034.5,-875.5 894.5,-875.5"/>
+<polygon fill="#5c7f42" stroke="transparent" points="895.5,-961 895.5,-981 1033.5,-981 1033.5,-961 895.5,-961"/>
+<text text-anchor="start" x="898.5" y="-968.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">proveedor</text>
+<text text-anchor="start" x="898.5" y="-950.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="917.5" y="-951" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="969.5" y="-950.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="917.5" y="-933" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="969.5" y="-933.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(150)</text>
+<text text-anchor="start" x="898.5" y="-916.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="917.5" y="-916" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">rut *</text>
+<text text-anchor="start" x="969.5" y="-916.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(12)</text>
+<text text-anchor="start" x="917.5" y="-899" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">contacto</text>
+<text text-anchor="start" x="969.5" y="-899.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(150)</text>
+<text text-anchor="start" x="917.5" y="-882" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activo *</text>
+<text text-anchor="start" x="969.5" y="-882.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#5c7f42" points="894.5,-875.5 894.5,-982.5 1034.5,-982.5 1034.5,-875.5 894.5,-875.5"/>
+</g>
+<!-- producto_proveedor&#45;&gt;proveedor -->
+<g id="m2_edge5" class="edge">
+<title>producto_proveedor:e&#45;&gt;proveedor:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M650.67,-966.13C664.17,-962.7 671.68,-955.52 691,-953 777.62,-941.7 802.38,-952.23 885.46,-952.96"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="643.44,-966.97 634.03,-963.98 638.97,-967.48 634.5,-968 634.5,-968 634.5,-968 638.97,-967.48 634.97,-972.02 643.44,-966.97 643.44,-966.97"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="647.02" cy="-966.55" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="893.62,-948.5 893.58,-957.5 891.78,-957.49 891.82,-948.49 893.62,-948.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="894.5,-953 890,-952.98 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="889.12,-948.48 889.08,-957.48 887.28,-957.47 887.32,-948.47 889.12,-948.48"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="890,-952.98 885.5,-952.96 "/>
+<text text-anchor="start" x="718" y="-955.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">proveedor_id</text>
+</g>
+<!-- lote -->
+<g id="m2_node6" class="node">
+<title>lote</title>
+<polygon fill="#eef3e7" stroke="transparent" points="429,-244.5 429,-419.5 638,-419.5 638,-244.5 429,-244.5"/>
+<polygon fill="#5c7f42" stroke="transparent" points="430.5,-398 430.5,-418 637.5,-418 637.5,-398 430.5,-398"/>
+<text text-anchor="start" x="433.5" y="-405.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">lote</text>
+<text text-anchor="start" x="433.5" y="-387.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="449.5" y="-388" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="579.5" y="-387.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="449.5" y="-370" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">numero_lote</text>
+<text text-anchor="start" x="579.5" y="-370.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="449.5" y="-353" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_vencimiento</text>
+<text text-anchor="start" x="579.5" y="-353.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">date</text>
+<text text-anchor="start" x="449.5" y="-336" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_ingreso *</text>
+<text text-anchor="start" x="579.5" y="-336.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">date</text>
+<text text-anchor="start" x="449.5" y="-319" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad_recibida *</text>
+<text text-anchor="start" x="579.5" y="-319.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="449.5" y="-302" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad_actual *</text>
+<text text-anchor="start" x="579.5" y="-302.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="433.5" y="-285.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="449.5" y="-285" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">producto_id *</text>
+<text text-anchor="start" x="579.5" y="-285.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="433.5" y="-268.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="449.5" y="-268" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sucursal_id *</text>
+<text text-anchor="start" x="579.5" y="-268.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="433.5" y="-251.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="449.5" y="-251" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">orden_compra_detalle_id</text>
+<text text-anchor="start" x="579.5" y="-251.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<polygon fill="none" stroke="#5c7f42" points="429,-244.5 429,-419.5 638,-419.5 638,-244.5 429,-244.5"/>
+</g>
+<!-- lote&#45;&gt;producto -->
+<g id="m2_edge8" class="edge">
+<title>lote:e&#45;&gt;producto:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M654.8,-290.73C671.85,-300.5 670.27,-327.42 691,-347 737.28,-390.71 772.03,-379.96 804,-435 844.2,-504.22 779.63,-782.99 848.43,-804.66"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="647.27,-289.01 639.4,-283.05 642.89,-288 638.5,-287 638.5,-287 638.5,-287 642.89,-288 637.6,-290.95 647.27,-289.01 647.27,-289.01"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="650.78" cy="-289.81" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="857.27,-801.42 855.95,-810.32 854.17,-810.06 855.49,-801.15 857.27,-801.42"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="857.5,-806 853.05,-805.34 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="852.81,-800.76 851.5,-809.66 849.72,-809.4 851.03,-800.5 852.81,-800.76"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="853.05,-805.34 848.6,-804.69 "/>
+<text text-anchor="start" x="720" y="-437.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">producto_id</text>
+</g>
+<!-- orden_compra_detalle@ -->
+<g id="m2_node12" class="node">
+<title>orden_compra_detalle@</title>
+<polygon fill="white" stroke="transparent" points="885.5,-233 885.5,-273 1043.5,-273 1043.5,-233 885.5,-233"/>
+<text text-anchor="start" x="890.5" y="-259.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#b8842a">orden_compra_detalle</text>
+<text text-anchor="start" x="890.5" y="-240.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Compras</text>
+<polygon fill="none" stroke="#b8842a" stroke-dasharray="5,2" points="885.5,-233 885.5,-273 1043.5,-273 1043.5,-233 885.5,-233"/>
+</g>
+<!-- lote&#45;&gt;orden_compra_detalle@ -->
+<g id="m2_edge10" class="edge">
+<title>lote:e&#45;&gt;orden_compra_detalle@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M654.77,-253C726.81,-253 805.6,-253 865.55,-253"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="647.5,-253 638.5,-248.95 643,-253 638.5,-253 638.5,-253 638.5,-253 643,-253 638.5,-257.05 647.5,-253 647.5,-253"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="651.1" cy="-253" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="876.38,-248.5 876.38,-257.5 874.58,-257.5 874.58,-248.5 876.38,-248.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="877.28,-253 872.78,-253 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="869.18" cy="-253" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="691" y="-255.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">orden_compra_detalle_id</text>
+</g>
+<!-- sucursal@ -->
+<g id="m2_node14" class="node">
+<title>sucursal@</title>
+<polygon fill="white" stroke="transparent" points="894.5,-512 894.5,-552 1034.5,-552 1034.5,-512 894.5,-512"/>
+<text text-anchor="start" x="899.5" y="-538.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">sucursal</text>
+<text text-anchor="start" x="899.5" y="-519.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="894.5,-512 894.5,-552 1034.5,-552 1034.5,-512 894.5,-512"/>
+</g>
+<!-- lote&#45;&gt;sucursal@ -->
+<g id="m2_edge9" class="edge">
+<title>lote:e&#45;&gt;sucursal@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M654.88,-270.1C722.17,-270.99 754.69,-279.15 804,-333 853.6,-387.16 798.66,-438.53 849,-492 857.11,-500.61 867.17,-507.37 877.94,-512.68"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="647.5,-270.05 638.52,-265.95 643,-270.03 638.5,-270 638.5,-270 638.5,-270 643,-270.03 638.48,-274.05 647.5,-270.05 647.5,-270.05"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="651.1" cy="-270.07" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="887.33,-511.98 883.62,-520.18 881.98,-519.44 885.69,-511.24 887.33,-511.98"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="886.3,-516.46 882.2,-514.6 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="883.23,-510.13 879.52,-518.33 877.88,-517.59 881.59,-509.39 883.23,-510.13"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="882.2,-514.6 878.1,-512.75 "/>
+<text text-anchor="start" x="722" y="-335.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- stock_minimo_sucursal -->
+<g id="m2_node7" class="node">
+<title>stock_minimo_sucursal</title>
+<polygon fill="#eef3e7" stroke="transparent" points="445.5,-664.5 445.5,-737.5 621.5,-737.5 621.5,-664.5 445.5,-664.5"/>
+<polygon fill="#5c7f42" stroke="transparent" points="446.5,-716 446.5,-736 620.5,-736 620.5,-716 446.5,-716"/>
+<text text-anchor="start" x="449.5" y="-723.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">stock_minimo_sucursal</text>
+<text text-anchor="start" x="449.5" y="-705.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="494.5" y="-706" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">producto_id</text>
+<text text-anchor="start" x="587.5" y="-705.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="449.5" y="-688.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="494.5" y="-689" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">sucursal_id</text>
+<text text-anchor="start" x="587.5" y="-688.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="494.5" y="-671" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">stock_minimo *</text>
+<text text-anchor="start" x="587.5" y="-671.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<polygon fill="none" stroke="#5c7f42" points="445.5,-664.5 445.5,-737.5 621.5,-737.5 621.5,-664.5 445.5,-664.5"/>
+</g>
+<!-- stock_minimo_sucursal&#45;&gt;producto -->
+<g id="m2_edge6" class="edge">
+<title>stock_minimo_sucursal:e&#45;&gt;producto:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M637.76,-708.33C710.17,-711.41 732.07,-735.73 804,-771 826.42,-781.99 828.81,-800.7 848.35,-805.07"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="630.5,-708.18 621.58,-703.95 626,-708.09 621.5,-708 621.5,-708 621.5,-708 626,-708.09 621.42,-712.05 630.5,-708.18 630.5,-708.18"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="634.1" cy="-708.26" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="857.06,-801.43 856.15,-810.39 854.36,-810.2 855.27,-801.25 857.06,-801.43"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="857.5,-806 853.02,-805.54 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="852.58,-800.98 851.67,-809.93 849.88,-809.75 850.79,-800.79 852.58,-800.98"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="853.02,-805.54 848.55,-805.09 "/>
+<text text-anchor="start" x="720" y="-773.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">producto_id</text>
+</g>
+<!-- stock_minimo_sucursal&#45;&gt;sucursal@ -->
+<g id="m2_edge7" class="edge">
+<title>stock_minimo_sucursal:e&#45;&gt;sucursal@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M637.96,-690.01C709.65,-690.04 740.75,-688.7 804,-643 833.98,-621.34 820.05,-596.02 849,-573 857.67,-566.11 867.6,-560.31 877.9,-555.47"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="630.5,-690.01 621.5,-685.95 626,-690 621.5,-690 621.5,-690 621.5,-690 626,-690 621.5,-694.05 630.5,-690.01 630.5,-690.01"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="634.1" cy="-690.01" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="883.59,-548.02 887.23,-556.25 885.59,-556.98 881.94,-548.75 883.59,-548.02"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="886.23,-551.77 882.12,-553.6 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="879.47,-549.85 883.12,-558.08 881.47,-558.81 877.83,-550.58 879.47,-549.85"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="882.12,-553.6 878,-555.42 "/>
+<text text-anchor="start" x="722" y="-690.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- tipo_movimiento -->
+<g id="m2_node8" class="node">
+<title>tipo_movimiento</title>
+<polygon fill="#eef3e7" stroke="transparent" points="897.5,-398.5 897.5,-471.5 1031.5,-471.5 1031.5,-398.5 897.5,-398.5"/>
+<polygon fill="#5c7f42" stroke="transparent" points="898.5,-450 898.5,-470 1030.5,-470 1030.5,-450 898.5,-450"/>
+<text text-anchor="start" x="901.5" y="-457.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">tipo_movimiento</text>
+<text text-anchor="start" x="901.5" y="-439.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="920.5" y="-440" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="972.5" y="-439.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="901.5" y="-422.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="920.5" y="-422" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="972.5" y="-422.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="920.5" y="-405" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">signo *</text>
+<text text-anchor="start" x="972.5" y="-405.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">smallint</text>
+<polygon fill="none" stroke="#5c7f42" points="897.5,-398.5 897.5,-471.5 1031.5,-471.5 1031.5,-398.5 897.5,-398.5"/>
+</g>
+<!-- motivo_movimiento -->
+<g id="m2_node9" class="node">
+<title>motivo_movimiento</title>
+<polygon fill="#eef3e7" stroke="transparent" points="433.5,-460 433.5,-550 633.5,-550 633.5,-460 433.5,-460"/>
+<polygon fill="#5c7f42" stroke="transparent" points="434.5,-529 434.5,-549 632.5,-549 632.5,-529 434.5,-529"/>
+<text text-anchor="start" x="437.5" y="-536.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">motivo_movimiento</text>
+<text text-anchor="start" x="437.5" y="-518.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="456.5" y="-519" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="568.5" y="-518.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="437.5" y="-501.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="456.5" y="-501" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="568.5" y="-501.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(100)</text>
+<text text-anchor="start" x="437.5" y="-484.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="456.5" y="-484" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">tipo_movimiento_id *</text>
+<text text-anchor="start" x="568.5" y="-484.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="456.5" y="-467" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activo *</text>
+<text text-anchor="start" x="568.5" y="-467.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#5c7f42" points="433.5,-460 433.5,-550 633.5,-550 633.5,-460 433.5,-460"/>
+</g>
+<!-- motivo_movimiento&#45;&gt;tipo_movimiento -->
+<g id="m2_edge1" class="edge">
+<title>motivo_movimiento:e&#45;&gt;tipo_movimiento:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M649.96,-485.71C752.29,-481.99 782.59,-444.15 888.39,-442.09"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="642.5,-485.84 633.43,-481.95 638,-485.92 633.5,-486 633.5,-486 633.5,-486 638,-485.92 633.57,-490.05 642.5,-485.84 642.5,-485.84"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="646.1" cy="-485.78" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="896.56,-437.51 896.64,-446.51 894.84,-446.53 894.76,-437.53 896.56,-437.51"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="897.5,-442 893,-442.04 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="892.06,-437.55 892.14,-446.55 890.34,-446.57 890.26,-437.57 892.06,-437.55"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="893,-442.04 888.5,-442.09 "/>
+<text text-anchor="start" x="703.5" y="-483.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">tipo_movimiento_id</text>
+</g>
+<!-- movimiento_inventario -->
+<g id="m2_node10" class="node">
+<title>movimiento_inventario</title>
+<polygon fill="#eef3e7" stroke="transparent" points="8,-313.5 8,-522.5 221,-522.5 221,-313.5 8,-313.5"/>
+<polygon fill="#5c7f42" stroke="transparent" points="9.5,-501 9.5,-521 220.5,-521 220.5,-501 9.5,-501"/>
+<text text-anchor="start" x="12.5" y="-508.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">movimiento_inventario</text>
+<text text-anchor="start" x="12.5" y="-490.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="28.5" y="-491" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="156.5" y="-490.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12.5" y="-473.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-473" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">producto_id *</text>
+<text text-anchor="start" x="156.5" y="-473.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12.5" y="-456.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-456" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sucursal_id *</text>
+<text text-anchor="start" x="156.5" y="-456.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="28.5" y="-439" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad *</text>
+<text text-anchor="start" x="156.5" y="-439.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="28.5" y="-422" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="156.5" y="-422.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="12.5" y="-405.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-405" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">motivo_movimiento_id *</text>
+<text text-anchor="start" x="156.5" y="-405.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12.5" y="-388.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-388" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">lote_id *</text>
+<text text-anchor="start" x="156.5" y="-388.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12.5" y="-371.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-371" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="156.5" y="-371.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12.5" y="-354.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-354" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">pedido_id</text>
+<text text-anchor="start" x="156.5" y="-354.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12.5" y="-337.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28.5" y="-337" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">orden_compra_id</text>
+<text text-anchor="start" x="156.5" y="-337.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="28.5" y="-320" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">observacion</text>
+<text text-anchor="start" x="156.5" y="-320.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(300)</text>
+<polygon fill="none" stroke="#5c7f42" points="8,-313.5 8,-522.5 221,-522.5 221,-313.5 8,-313.5"/>
+</g>
+<!-- movimiento_inventario&#45;&gt;producto -->
+<g id="m2_edge11" class="edge">
+<title>movimiento_inventario:e&#45;&gt;producto:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M237.55,-478.91C263.44,-490.41 251.69,-533.65 274,-567 333.56,-656.03 327.63,-705.5 421,-758 588.47,-852.15 660.08,-807.45 848.44,-806.03"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.36,-477.61 222.22,-472.02 225.93,-476.8 221.5,-476 221.5,-476 221.5,-476 225.93,-476.8 220.78,-479.98 230.36,-477.61 230.36,-477.61"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="233.9" cy="-478.25" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="856.58,-801.5 856.62,-810.5 854.82,-810.51 854.78,-801.51 856.58,-801.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="857.5,-806 853,-806.02 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="852.08,-801.52 852.12,-810.52 850.32,-810.53 850.28,-801.53 852.08,-801.52"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="853,-806.02 848.5,-806.03 "/>
+<text text-anchor="start" x="506" y="-819.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">producto_id</text>
+</g>
+<!-- movimiento_inventario&#45;&gt;lote -->
+<g id="m2_edge14" class="edge">
+<title>movimiento_inventario:e&#45;&gt;lote:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M238.05,-390C314.17,-390 340.85,-390 420.1,-390"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.5,-390 221.5,-385.95 226,-390 221.5,-390 221.5,-390 221.5,-390 226,-390 221.5,-394.05 230.5,-390 230.5,-390"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="234.1" cy="-390" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="428.6,-385.5 428.6,-394.5 426.8,-394.5 426.8,-385.5 428.6,-385.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="429.5,-390 425,-390 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="424.1,-385.5 424.1,-394.5 422.3,-394.5 422.3,-385.5 424.1,-385.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="425,-390 420.5,-390 "/>
+<text text-anchor="start" x="310" y="-392.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">lote_id</text>
+</g>
+<!-- movimiento_inventario&#45;&gt;motivo_movimiento -->
+<g id="m2_edge13" class="edge">
+<title>movimiento_inventario:e&#45;&gt;motivo_movimiento:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M237.83,-407.95C325.75,-418.57 331.95,-514.71 424.29,-520.71"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.48,-407.52 221.74,-402.96 225.99,-407.26 221.5,-407 221.5,-407 221.5,-407 225.99,-407.26 221.26,-411.04 230.48,-407.52 230.48,-407.52"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="234.08" cy="-407.73" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="432.74,-516.47 432.46,-525.47 430.66,-525.41 430.94,-516.42 432.74,-516.47"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="433.5,-521 429,-520.86 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="428.25,-516.33 427.96,-525.33 426.16,-525.27 426.45,-516.27 428.25,-516.33"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="429,-520.86 424.5,-520.71 "/>
+<text text-anchor="start" x="274" y="-506.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">motivo_movimiento_id</text>
+</g>
+<!-- orden_compra@ -->
+<g id="m2_node11" class="node">
+<title>orden_compra@</title>
+<polygon fill="white" stroke="transparent" points="480.5,-4 480.5,-44 586.5,-44 586.5,-4 480.5,-4"/>
+<text text-anchor="start" x="485.5" y="-30.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#b8842a">orden_compra</text>
+<text text-anchor="start" x="485.5" y="-11.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Compras</text>
+<polygon fill="none" stroke="#b8842a" stroke-dasharray="5,2" points="480.5,-4 480.5,-44 586.5,-44 586.5,-4 480.5,-4"/>
+</g>
+<!-- movimiento_inventario&#45;&gt;orden_compra@ -->
+<g id="m2_edge17" class="edge">
+<title>movimiento_inventario:e&#45;&gt;orden_compra@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M237.69,-337.24C298.3,-321.97 223.08,-211.1 274,-146 320.15,-87 401.74,-55.16 460.94,-38.97"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.45,-338.03 221.06,-334.97 225.97,-338.51 221.5,-339 221.5,-339 221.5,-339 225.97,-338.51 221.94,-343.03 230.45,-338.03 230.45,-338.03"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="234.03" cy="-337.64" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="470.45,-31.81 472.74,-40.51 471,-40.97 468.71,-32.27 470.45,-31.81"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="472.46,-35.93 468.11,-37.08 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="464.63" cy="-38" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="285.5" y="-148.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">orden_compra_id</text>
+</g>
+<!-- pedido@ -->
+<g id="m2_node13" class="node">
+<title>pedido@</title>
+<polygon fill="white" stroke="transparent" points="498,-84 498,-124 569,-124 569,-84 498,-84"/>
+<text text-anchor="start" x="503.5" y="-110.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#c1552a">pedido</text>
+<text text-anchor="start" x="503.5" y="-91.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Ventas</text>
+<polygon fill="none" stroke="#c1552a" stroke-dasharray="5,2" points="498,-84 498,-124 569,-124 569,-84 498,-84"/>
+</g>
+<!-- movimiento_inventario&#45;&gt;pedido@ -->
+<g id="m2_edge16" class="edge">
+<title>movimiento_inventario:e&#45;&gt;pedido@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M237.46,-353.21C269.06,-339.62 242.01,-279.44 274,-242 328.54,-178.19 420.16,-139.31 478.4,-119.73"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.37,-354.45 220.8,-352.01 225.93,-355.23 221.5,-356 221.5,-356 221.5,-356 225.93,-355.23 222.2,-359.99 230.37,-354.45 230.37,-354.45"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="233.91" cy="-353.83" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="487.33,-112.07 490.13,-120.62 488.42,-121.18 485.62,-112.63 487.33,-112.07"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="489.59,-116.07 485.31,-117.47 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="481.89" cy="-118.59" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="303" y="-244.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">pedido_id</text>
+</g>
+<!-- movimiento_inventario&#45;&gt;sucursal@ -->
+<g id="m2_edge12" class="edge">
+<title>movimiento_inventario:e&#45;&gt;sucursal@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M237.29,-463.06C254.21,-474.18 249.49,-505.38 274,-522 330.88,-560.57 353.13,-559.2 421,-570 519.76,-585.72 546.18,-575.95 646,-570 724.57,-565.32 813.49,-554.16 877.21,-545.15"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.22,-461.24 222.51,-455.08 225.86,-460.12 221.5,-459 221.5,-459 221.5,-459 225.86,-460.12 220.49,-462.92 230.22,-461.24 230.22,-461.24"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="233.7" cy="-462.14" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="884.89,-539.5 886.16,-548.41 884.38,-548.67 883.11,-539.76 884.89,-539.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="886.42,-543.83 881.96,-544.47 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="880.44,-540.14 881.71,-549.05 879.93,-549.3 878.66,-540.39 880.44,-540.14"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="881.96,-544.47 877.51,-545.1 "/>
+<text text-anchor="start" x="508" y="-580.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- usuario@ -->
+<g id="m2_node15" class="node">
+<title>usuario@</title>
+<polygon fill="white" stroke="transparent" points="463.5,-164 463.5,-204 603.5,-204 603.5,-164 463.5,-164"/>
+<text text-anchor="start" x="468.5" y="-190.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">usuario</text>
+<text text-anchor="start" x="468.5" y="-171.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="463.5,-164 463.5,-204 603.5,-204 603.5,-164 463.5,-164"/>
+</g>
+<!-- movimiento_inventario&#45;&gt;usuario@ -->
+<g id="m2_edge15" class="edge">
+<title>movimiento_inventario:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M237.72,-372.25C331.35,-363.23 328.89,-274.76 421,-225 429.98,-220.15 439.66,-215.64 449.43,-211.52"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="230.49,-372.59 221.31,-368.95 226,-372.79 221.5,-373 221.5,-373 221.5,-373 226,-372.79 221.69,-377.05 230.49,-372.59 230.49,-372.59"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="234.09" cy="-372.42" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="455.48,-204.18 458.89,-212.51 457.22,-213.19 453.82,-204.86 455.48,-204.18"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="458.02,-208.01 453.85,-209.71 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="451.32,-205.89 454.73,-214.22 453.06,-214.9 449.65,-206.57 451.32,-205.89"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="453.85,-209.71 449.69,-211.41 "/>
+<text text-anchor="start" x="302" y="-364.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+</g>
+</svg>
+<rect x="50" y="2051.0" width="1056" height="387" rx="10" fill="white" stroke="#B8842A" stroke-width="2"/>
+<rect x="50" y="2051.0" width="1056" height="44" rx="10" fill="#B8842A"/><rect x="50" y="2085.0" width="1056" height="10" fill="#B8842A"/>
+<text x="68" y="2080.0" font-size="20" font-weight="bold" fill="white">Compras</text>
+<text x="1088" y="2080.0" font-size="14" fill="white" text-anchor="end">3 tablas · 6 relaciones</text>
+<svg x="50" y="2095.0" width="1056" height="343" viewBox="0.00 0.00 1056.00 342.50">
+<g id="m3_graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 324.5)">
+<title>G</title>
+
+<!-- orden_compra -->
+<g id="m3_node1" class="node">
+<title>orden_compra</title>
+<polygon fill="#faf1dd" stroke="transparent" points="393,-93.5 393,-302.5 624,-302.5 624,-93.5 393,-93.5"/>
+<polygon fill="#b8842a" stroke="transparent" points="394.5,-281 394.5,-301 623.5,-301 623.5,-281 394.5,-281"/>
+<text text-anchor="start" x="397.5" y="-288.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">orden_compra</text>
+<text text-anchor="start" x="397.5" y="-270.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="416.5" y="-271" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="553.5" y="-270.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="416.5" y="-253" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="553.5" y="-253.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="416.5" y="-236" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_esperada</text>
+<text text-anchor="start" x="553.5" y="-236.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">date</text>
+<text text-anchor="start" x="397.5" y="-219.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="416.5" y="-219" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">estado_orden_compra_id *</text>
+<text text-anchor="start" x="553.5" y="-219.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="416.5" y="-202" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">subtotal_neto *</text>
+<text text-anchor="start" x="553.5" y="-202.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="416.5" y="-185" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">iva *</text>
+<text text-anchor="start" x="553.5" y="-185.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="416.5" y="-168" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">total *</text>
+<text text-anchor="start" x="553.5" y="-168.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="397.5" y="-151.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="416.5" y="-151" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">proveedor_id *</text>
+<text text-anchor="start" x="553.5" y="-151.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="397.5" y="-134.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="416.5" y="-134" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="553.5" y="-134.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="397.5" y="-117.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="416.5" y="-117" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sucursal_id *</text>
+<text text-anchor="start" x="553.5" y="-117.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="397.5" y="-100.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="416.5" y="-100" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">numero *</text>
+<text text-anchor="start" x="553.5" y="-100.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bigint</text>
+<polygon fill="none" stroke="#b8842a" points="393,-93.5 393,-302.5 624,-302.5 624,-93.5 393,-93.5"/>
+</g>
+<!-- estado_orden_compra -->
+<g id="m3_node3" class="node">
+<title>estado_orden_compra</title>
+<polygon fill="#faf1dd" stroke="transparent" points="843,-244 843,-300 1012,-300 1012,-244 843,-244"/>
+<polygon fill="#b8842a" stroke="transparent" points="844.5,-279 844.5,-299 1011.5,-299 1011.5,-279 844.5,-279"/>
+<text text-anchor="start" x="847.5" y="-286.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">estado_orden_compra</text>
+<text text-anchor="start" x="847.5" y="-268.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="883.5" y="-269" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="944.5" y="-268.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="847.5" y="-251.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="883.5" y="-251" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="944.5" y="-251.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<polygon fill="none" stroke="#b8842a" points="843,-244 843,-300 1012,-300 1012,-244 843,-244"/>
+</g>
+<!-- orden_compra&#45;&gt;estado_orden_compra -->
+<g id="m3_edge1" class="edge">
+<title>orden_compra:e&#45;&gt;estado_orden_compra:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M640.96,-222.46C723.83,-227.21 748.01,-267.21 834.38,-269.86"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="633.5,-222.25 624.61,-217.95 629,-222.13 624.5,-222 624.5,-222 624.5,-222 629,-222.13 624.39,-226.05 633.5,-222.25 633.5,-222.25"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="637.1" cy="-222.35" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="842.67,-265.49 842.53,-274.49 840.73,-274.46 840.87,-265.46 842.67,-265.49"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="843.5,-270 839,-269.93 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="838.17,-265.42 838.03,-274.42 836.23,-274.39 836.37,-265.39 838.17,-265.42"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="839,-269.93 834.5,-269.86 "/>
+<text text-anchor="start" x="677" y="-266.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">estado_orden_compra_id</text>
+</g>
+<!-- proveedor@ -->
+<g id="m3_node5" class="node">
+<title>proveedor@</title>
+<polygon fill="white" stroke="transparent" points="871.5,-164 871.5,-204 983.5,-204 983.5,-164 871.5,-164"/>
+<text text-anchor="start" x="876.5" y="-190.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#5c7f42">proveedor</text>
+<text text-anchor="start" x="876.5" y="-171.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Catálogo y Stock</text>
+<polygon fill="none" stroke="#5c7f42" stroke-dasharray="5,2" points="871.5,-164 871.5,-204 983.5,-204 983.5,-164 871.5,-164"/>
+</g>
+<!-- orden_compra&#45;&gt;proveedor@ -->
+<g id="m3_edge2" class="edge">
+<title>orden_compra:e&#45;&gt;proveedor@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M641.16,-153.15C715.7,-154.47 797.33,-164.19 854.11,-172.37"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="633.5,-153.08 624.54,-148.95 629,-153.04 624.5,-153 624.5,-153 624.5,-153 629,-153.04 624.46,-157.05 633.5,-153.08 633.5,-153.08"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="637.1" cy="-153.11" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="863.11,-169.14 861.81,-178.04 860.03,-177.78 861.33,-168.88 863.11,-169.14"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="863.35,-173.72 858.9,-173.07 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="858.66,-168.49 857.36,-177.39 855.58,-177.13 856.88,-168.23 858.66,-168.49"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="858.9,-173.07 854.45,-172.42 "/>
+<text text-anchor="start" x="704" y="-165.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">proveedor_id</text>
+</g>
+<!-- sucursal@ -->
+<g id="m3_node6" class="node">
+<title>sucursal@</title>
+<polygon fill="white" stroke="transparent" points="857.5,-4 857.5,-44 997.5,-44 997.5,-4 857.5,-4"/>
+<text text-anchor="start" x="862.5" y="-30.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">sucursal</text>
+<text text-anchor="start" x="862.5" y="-11.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="857.5,-4 857.5,-44 997.5,-44 997.5,-4 857.5,-4"/>
+</g>
+<!-- orden_compra&#45;&gt;sucursal@ -->
+<g id="m3_edge4" class="edge">
+<title>orden_compra:e&#45;&gt;sucursal@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M640.38,-115.5C678.63,-105.17 774.59,-74.1 844.87,-51.01"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="633.29,-117.06 623.63,-115.04 628.89,-118.03 624.5,-119 624.5,-119 624.5,-119 628.89,-118.03 625.37,-122.96 633.29,-117.06 633.29,-117.06"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="636.81" cy="-116.29" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="851.48,-44.1 854.29,-52.65 852.58,-53.21 849.77,-44.66 851.48,-44.1"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="853.74,-48.1 849.46,-49.5 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="847.2,-45.51 850.01,-54.06 848.3,-54.62 845.49,-46.07 847.2,-45.51"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="849.46,-49.5 845.19,-50.91 "/>
+<text text-anchor="start" x="708" y="-105.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- usuario@ -->
+<g id="m3_node7" class="node">
+<title>usuario@</title>
+<polygon fill="white" stroke="transparent" points="857.5,-84 857.5,-124 997.5,-124 997.5,-84 857.5,-84"/>
+<text text-anchor="start" x="862.5" y="-110.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">usuario</text>
+<text text-anchor="start" x="862.5" y="-91.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="857.5,-84 857.5,-124 997.5,-124 997.5,-84 857.5,-84"/>
+</g>
+<!-- orden_compra&#45;&gt;usuario@ -->
+<g id="m3_edge3" class="edge">
+<title>orden_compra:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M640.85,-135.85C709.65,-134.62 784.51,-125.98 840.33,-118.02"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="633.5,-135.92 624.46,-131.95 629,-135.96 624.5,-136 624.5,-136 624.5,-136 629,-135.96 624.54,-140.05 633.5,-135.92 633.5,-135.92"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="637.1" cy="-135.88" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="847.93,-112.37 849.22,-121.28 847.44,-121.53 846.15,-112.63 847.93,-112.37"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="849.47,-116.69 845.01,-117.34 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="843.48,-113.01 844.77,-121.92 842.98,-122.18 841.7,-113.27 843.48,-113.01"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="845.01,-117.34 840.56,-117.98 "/>
+<text text-anchor="start" x="710.5" y="-136.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- orden_compra_detalle -->
+<g id="m3_node2" class="node">
+<title>orden_compra_detalle</title>
+<polygon fill="#faf1dd" stroke="transparent" points="8,-39 8,-163 208,-163 208,-39 8,-39"/>
+<polygon fill="#b8842a" stroke="transparent" points="9,-142 9,-162 207,-162 207,-142 9,-142"/>
+<text text-anchor="start" x="12" y="-149.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">orden_compra_detalle</text>
+<text text-anchor="start" x="12" y="-131.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="28" y="-132" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="137" y="-131.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="28" y="-114" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad_solicitada *</text>
+<text text-anchor="start" x="137" y="-114.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="28" y="-97" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad_recibida *</text>
+<text text-anchor="start" x="137" y="-97.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="28" y="-80" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">costo_unitario *</text>
+<text text-anchor="start" x="137" y="-80.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="12" y="-63.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28" y="-63" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">orden_compra_id *</text>
+<text text-anchor="start" x="137" y="-63.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-46.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28" y="-46" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">producto_id *</text>
+<text text-anchor="start" x="137" y="-46.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<polygon fill="none" stroke="#b8842a" points="8,-39 8,-163 208,-163 208,-39 8,-39"/>
+</g>
+<!-- orden_compra_detalle&#45;&gt;orden_compra -->
+<g id="m3_edge5" class="edge">
+<title>orden_compra_detalle:e&#45;&gt;orden_compra:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M224.23,-66.33C323.75,-83.58 278.02,-263.15 384.51,-272.61"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="216.97,-65.73 208.33,-60.96 212.49,-65.37 208,-65 208,-65 208,-65 212.49,-65.37 207.67,-69.04 216.97,-65.73 216.97,-65.73"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="220.56" cy="-66.03" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="392.79,-268.47 392.41,-277.46 390.61,-277.38 391,-268.39 392.79,-268.47"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="393.5,-273 389,-272.81 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="388.3,-268.27 387.91,-277.26 386.11,-277.19 386.5,-268.19 388.3,-268.27"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="389,-272.81 384.51,-272.61 "/>
+<text text-anchor="start" x="261" y="-253.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">orden_compra_id</text>
+</g>
+<!-- producto@ -->
+<g id="m3_node4" class="node">
+<title>producto@</title>
+<polygon fill="white" stroke="transparent" points="452.5,-13 452.5,-53 564.5,-53 564.5,-13 452.5,-13"/>
+<text text-anchor="start" x="457.5" y="-39.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#5c7f42">producto</text>
+<text text-anchor="start" x="457.5" y="-20.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Catálogo y Stock</text>
+<polygon fill="none" stroke="#5c7f42" stroke-dasharray="5,2" points="452.5,-13 452.5,-53 564.5,-53 564.5,-13 452.5,-13"/>
+</g>
+<!-- orden_compra_detalle&#45;&gt;producto@ -->
+<g id="m3_edge6" class="edge">
+<title>orden_compra_detalle:e&#45;&gt;producto@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M224.43,-47.93C298,-47.29 378.86,-42.6 435.26,-38.65"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="217,-47.96 207.98,-43.95 212.5,-47.98 208,-48 208,-48 208,-48 212.5,-47.98 208.02,-52.05 217,-47.96 217,-47.96"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="220.6" cy="-47.94" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="443.23,-33.57 443.86,-42.55 442.07,-42.67 441.43,-33.7 443.23,-33.57"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="444.44,-37.99 439.95,-38.31 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="438.74,-33.89 439.38,-42.87 437.58,-42.99 436.94,-34.02 438.74,-33.89"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="439.95,-38.31 435.47,-38.63 "/>
+<text text-anchor="start" x="273" y="-50.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">producto_id</text>
+</g>
+</g>
+</svg>
+<rect x="1682.0" y="262" width="1036" height="1098" rx="10" fill="white" stroke="#C1552A" stroke-width="2"/>
+<rect x="1682.0" y="262" width="1036" height="44" rx="10" fill="#C1552A"/><rect x="1682.0" y="296" width="1036" height="10" fill="#C1552A"/>
+<text x="1700.0" y="291" font-size="20" font-weight="bold" fill="white">Ventas</text>
+<text x="2700" y="291" font-size="14" fill="white" text-anchor="end">9 tablas · 15 relaciones</text>
+<svg x="1682.0" y="306" width="1036" height="1054" viewBox="0.00 0.00 1036.00 1053.50">
+<g id="m4_graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 1035.5)">
+<title>G</title>
+
+<!-- pedido -->
+<g id="m4_node1" class="node">
+<title>pedido</title>
+<polygon fill="#fbebe2" stroke="transparent" points="438.5,-622 438.5,-950 632.5,-950 632.5,-622 438.5,-622"/>
+<polygon fill="#c1552a" stroke="transparent" points="439.5,-929 439.5,-949 631.5,-949 631.5,-929 439.5,-929"/>
+<text text-anchor="start" x="442.5" y="-936.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">pedido</text>
+<text text-anchor="start" x="442.5" y="-918.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="461.5" y="-919" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="561.5" y="-918.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="461.5" y="-901" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="561.5" y="-901.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="442.5" y="-884.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-884" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">canal_venta_id *</text>
+<text text-anchor="start" x="561.5" y="-884.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="442.5" y="-867.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-867" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">estado_pedido_id *</text>
+<text text-anchor="start" x="561.5" y="-867.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="461.5" y="-850" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">subtotal_bruto *</text>
+<text text-anchor="start" x="561.5" y="-850.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="461.5" y="-833" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">total *</text>
+<text text-anchor="start" x="561.5" y="-833.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="461.5" y="-816" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">subtotal_neto *</text>
+<text text-anchor="start" x="561.5" y="-816.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="461.5" y="-799" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">iva *</text>
+<text text-anchor="start" x="561.5" y="-799.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="461.5" y="-782" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre_cliente *</text>
+<text text-anchor="start" x="561.5" y="-782.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(150)</text>
+<text text-anchor="start" x="461.5" y="-765" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">direccion_pedido</text>
+<text text-anchor="start" x="561.5" y="-765.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(200)</text>
+<text text-anchor="start" x="461.5" y="-748" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">telefono</text>
+<text text-anchor="start" x="561.5" y="-748.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(30)</text>
+<text text-anchor="start" x="442.5" y="-731.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-731" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">comuna_id</text>
+<text text-anchor="start" x="561.5" y="-731.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="442.5" y="-714.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-714" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cliente_id</text>
+<text text-anchor="start" x="561.5" y="-714.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="442.5" y="-697.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-697" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">vendedor_id</text>
+<text text-anchor="start" x="561.5" y="-697.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="442.5" y="-680.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-680" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sucursal_id</text>
+<text text-anchor="start" x="561.5" y="-680.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="442.5" y="-663.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="461.5" y="-663" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">turno_caja_id</text>
+<text text-anchor="start" x="561.5" y="-663.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="442.5" y="-646.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="461.5" y="-646" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">numero *</text>
+<text text-anchor="start" x="561.5" y="-646.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bigint</text>
+<text text-anchor="start" x="461.5" y="-629" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">redondeo *</text>
+<text text-anchor="start" x="561.5" y="-629.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<polygon fill="none" stroke="#c1552a" points="438.5,-622 438.5,-950 632.5,-950 632.5,-622 438.5,-622"/>
+</g>
+<!-- estado_pedido -->
+<g id="m4_node3" class="node">
+<title>estado_pedido</title>
+<polygon fill="#fbebe2" stroke="transparent" points="841,-844 841,-900 975,-900 975,-844 841,-844"/>
+<polygon fill="#c1552a" stroke="transparent" points="842,-879 842,-899 974,-899 974,-879 842,-879"/>
+<text text-anchor="start" x="845" y="-886.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">estado_pedido</text>
+<text text-anchor="start" x="845" y="-868.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="864" y="-869" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="916" y="-868.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="845" y="-851.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="864" y="-851" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="916" y="-851.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<polygon fill="none" stroke="#c1552a" points="841,-844 841,-900 975,-900 975,-844 841,-844"/>
+</g>
+<!-- pedido&#45;&gt;estado_pedido -->
+<g id="m4_edge3" class="edge">
+<title>pedido:e&#45;&gt;estado_pedido:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M649.09,-870C725.39,-870 752.14,-870 831.57,-870"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.5,-870 632.5,-865.95 637,-870 632.5,-870 632.5,-870 632.5,-870 637,-870 632.5,-874.05 641.5,-870 641.5,-870"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645.1" cy="-870" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="840.1,-865.5 840.1,-874.5 838.3,-874.5 838.3,-865.5 840.1,-865.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="841,-870 836.5,-870 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="835.6,-865.5 835.6,-874.5 833.8,-874.5 833.8,-865.5 835.6,-865.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="836.5,-870 832,-870 "/>
+<text text-anchor="start" x="692" y="-872.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">estado_pedido_id</text>
+</g>
+<!-- canal_venta -->
+<g id="m4_node4" class="node">
+<title>canal_venta</title>
+<polygon fill="#fbebe2" stroke="transparent" points="824,-940.5 824,-1013.5 992,-1013.5 992,-940.5 824,-940.5"/>
+<polygon fill="#c1552a" stroke="transparent" points="825,-992 825,-1012 991,-1012 991,-992 825,-992"/>
+<text text-anchor="start" x="828" y="-999.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">canal_venta</text>
+<text text-anchor="start" x="828" y="-981.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="847" y="-982" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="933" y="-981.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="828" y="-964.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="847" y="-964" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="933" y="-964.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="847" y="-947" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">requiere_turno *</text>
+<text text-anchor="start" x="933" y="-947.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#c1552a" points="824,-940.5 824,-1013.5 992,-1013.5 992,-940.5 824,-940.5"/>
+</g>
+<!-- pedido&#45;&gt;canal_venta -->
+<g id="m4_edge2" class="edge">
+<title>pedido:e&#45;&gt;canal_venta:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M648.83,-888.02C725.54,-898.03 733.85,-978.07 814.85,-983.69"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.48,-887.56 632.75,-882.96 636.99,-887.28 632.5,-887 632.5,-887 632.5,-887 636.99,-887.28 632.25,-891.04 641.48,-887.56 641.48,-887.56"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645.08" cy="-887.79" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="823.25,-979.47 822.95,-988.47 821.15,-988.41 821.45,-979.41 823.25,-979.47"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="824,-984 819.5,-983.85 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="818.76,-979.32 818.45,-988.31 816.65,-988.25 816.96,-979.26 818.76,-979.32"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="819.5,-983.85 815.01,-983.69 "/>
+<text text-anchor="start" x="698" y="-971.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">canal_venta_id</text>
+</g>
+<!-- comuna@ -->
+<g id="m4_node11" class="node">
+<title>comuna@</title>
+<polygon fill="white" stroke="transparent" points="838,-764 838,-804 978,-804 978,-764 838,-764"/>
+<text text-anchor="start" x="843" y="-790.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">comuna</text>
+<text text-anchor="start" x="843" y="-771.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="838,-764 838,-804 978,-804 978,-764 838,-764"/>
+</g>
+<!-- pedido&#45;&gt;comuna@ -->
+<g id="m4_edge4" class="edge">
+<title>pedido:e&#45;&gt;comuna@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M649,-734.09C663.6,-736.25 671.92,-741.15 692,-745 733.36,-752.92 779.28,-761.31 818.03,-768.26"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.48,-733.6 632.77,-728.96 636.99,-733.3 632.5,-733 632.5,-733 632.5,-733 636.99,-733.3 632.23,-737.04 641.48,-733.6 641.48,-733.6"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645.07" cy="-733.83" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="829.72,-765.79 828.13,-774.65 826.36,-774.33 827.95,-765.47 829.72,-765.79"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="829.81,-770.38 825.38,-769.58 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="821.84" cy="-768.95" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="706.5" y="-761.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">comuna_id</text>
+</g>
+<!-- sucursal@ -->
+<g id="m4_node13" class="node">
+<title>sucursal@</title>
+<polygon fill="white" stroke="transparent" points="838,-604 838,-644 978,-644 978,-604 838,-604"/>
+<text text-anchor="start" x="843" y="-630.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">sucursal</text>
+<text text-anchor="start" x="843" y="-611.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="838,-604 838,-644 978,-644 978,-604 838,-604"/>
+</g>
+<!-- pedido&#45;&gt;sucursal@ -->
+<g id="m4_edge7" class="edge">
+<title>pedido:e&#45;&gt;sucursal@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M648.68,-680.24C683.43,-674.89 758.13,-658.4 818.31,-644.65"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.45,-681.02 632.06,-677.97 636.97,-681.51 632.5,-682 632.5,-682 632.5,-682 636.97,-681.51 632.94,-686.03 641.45,-681.02 641.45,-681.02"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645.03" cy="-680.63" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="827.87,-637.85 829.88,-646.62 828.12,-647.02 826.11,-638.25 827.87,-637.85"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="829.75,-642.03 825.36,-643.04 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="821.86" cy="-643.84" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="706" y="-672.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- turno_caja@ -->
+<g id="m4_node14" class="node">
+<title>turno_caja@</title>
+<polygon fill="white" stroke="transparent" points="859,-524 859,-564 957,-564 957,-524 859,-524"/>
+<text text-anchor="start" x="864" y="-550.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#2f8579">turno_caja</text>
+<text text-anchor="start" x="864" y="-531.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Caja y Turnos</text>
+<polygon fill="none" stroke="#2f8579" stroke-dasharray="5,2" points="859,-524 859,-564 957,-564 957,-524 859,-524"/>
+</g>
+<!-- pedido&#45;&gt;turno_caja@ -->
+<g id="m4_edge8" class="edge">
+<title>pedido:e&#45;&gt;turno_caja@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M648.93,-662.88C664.48,-658.29 671.48,-647.14 692,-638 741.64,-615.89 797.92,-591.3 840.44,-572.82"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.43,-663.85 631.98,-660.98 636.96,-664.42 632.5,-665 632.5,-665 632.5,-665 636.96,-664.42 633.02,-669.02 641.43,-663.85 641.43,-663.85"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645" cy="-663.39" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="848.6,-564.37 852.19,-572.62 850.54,-573.34 846.95,-565.08 848.6,-564.37"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="851.22,-568.13 847.1,-569.93 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="843.79" cy="-571.36" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="701" y="-640.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">turno_caja_id</text>
+</g>
+<!-- usuario@ -->
+<g id="m4_node15" class="node">
+<title>usuario@</title>
+<polygon fill="white" stroke="transparent" points="838,-684 838,-724 978,-724 978,-684 838,-684"/>
+<text text-anchor="start" x="843" y="-710.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">usuario</text>
+<text text-anchor="start" x="843" y="-691.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="838,-684 838,-724 978,-724 978,-684 838,-684"/>
+</g>
+<!-- pedido&#45;&gt;usuario@ -->
+<g id="m4_edge5" class="edge">
+<title>pedido:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M649.07,-715.93C706.69,-715.45 769.04,-712.64 818.01,-709.86"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.5,-715.96 632.48,-711.95 637,-715.98 632.5,-716 632.5,-716 632.5,-716 637,-715.98 632.52,-720.05 641.5,-715.96 641.5,-715.96"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645.1" cy="-715.95" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="828.68,-704.74 829.2,-713.72 827.4,-713.82 826.88,-704.84 828.68,-704.74"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="829.84,-709.18 825.34,-709.44 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="821.75" cy="-709.64" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="710" y="-717.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">cliente_id</text>
+</g>
+<!-- pedido&#45;&gt;usuario@ -->
+<g id="m4_edge6" class="edge">
+<title>pedido:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M648.82,-698.41C663.34,-697.28 671.91,-694.84 692,-694 727.08,-692.53 735.91,-692.71 771,-694 786.18,-694.56 802.29,-695.46 817.91,-696.51"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="641.49,-698.68 632.35,-694.95 637,-698.84 632.5,-699 632.5,-699 632.5,-699 637,-698.84 632.65,-703.05 641.49,-698.68 641.49,-698.68"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="645.09" cy="-698.55" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="829.15,-692.78 828.53,-701.76 826.73,-701.63 827.36,-692.65 829.15,-692.78"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="829.74,-697.33 825.25,-697.02 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="821.66" cy="-696.77" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="703.5" y="-696.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">vendedor_id</text>
+</g>
+<!-- detalle_pedido -->
+<g id="m4_node2" class="node">
+<title>detalle_pedido</title>
+<polygon fill="#fbebe2" stroke="transparent" points="20.5,-536 20.5,-694 213.5,-694 213.5,-536 20.5,-536"/>
+<polygon fill="#c1552a" stroke="transparent" points="22,-673 22,-693 213,-693 213,-673 22,-673"/>
+<text text-anchor="start" x="25" y="-680.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">detalle_pedido</text>
+<text text-anchor="start" x="25" y="-662.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="41" y="-663" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="143" y="-662.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="41" y="-645" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre_producto *</text>
+<text text-anchor="start" x="143" y="-645.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(200)</text>
+<text text-anchor="start" x="41" y="-628" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad *</text>
+<text text-anchor="start" x="143" y="-628.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="41" y="-611" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">precio_unitario *</text>
+<text text-anchor="start" x="143" y="-611.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="41" y="-594" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">descuento_monto *</text>
+<text text-anchor="start" x="143" y="-594.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="25" y="-577.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="41" y="-577" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">pedido_id *</text>
+<text text-anchor="start" x="143" y="-577.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="25" y="-560.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="41" y="-560" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">producto_id *</text>
+<text text-anchor="start" x="143" y="-560.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="25" y="-543.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="41" y="-543" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">regla_descuento_id</text>
+<text text-anchor="start" x="143" y="-543.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<polygon fill="none" stroke="#c1552a" points="20.5,-536 20.5,-694 213.5,-694 213.5,-536 20.5,-536"/>
+</g>
+<!-- detalle_pedido&#45;&gt;pedido -->
+<g id="m4_edge9" class="edge">
+<title>detalle_pedido:e&#45;&gt;pedido:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M230.6,-580.04C384.44,-600.32 266.83,-909.83 429.5,-920.71"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="222.98,-579.56 214.25,-574.96 218.49,-579.28 214,-579 214,-579 214,-579 218.49,-579.28 213.75,-583.04 222.98,-579.56 222.98,-579.56"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="226.58" cy="-579.79" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="437.75,-916.47 437.45,-925.47 435.65,-925.41 435.95,-916.41 437.75,-916.47"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="438.5,-921 434,-920.85 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="433.25,-916.33 432.96,-925.32 431.16,-925.26 431.45,-916.27 433.25,-916.33"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="434,-920.85 429.5,-920.71 "/>
+<text text-anchor="start" x="307" y="-899.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">pedido_id</text>
+</g>
+<!-- regla_descuento -->
+<g id="m4_node5" class="node">
+<title>regla_descuento</title>
+<polygon fill="#fbebe2" stroke="transparent" points="432,-326.5 432,-501.5 639,-501.5 639,-326.5 432,-326.5"/>
+<polygon fill="#c1552a" stroke="transparent" points="433.5,-480 433.5,-500 638.5,-500 638.5,-480 433.5,-480"/>
+<text text-anchor="start" x="436.5" y="-487.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">regla_descuento</text>
+<text text-anchor="start" x="436.5" y="-469.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="452.5" y="-470" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="574.5" y="-469.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="452.5" y="-452" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="574.5" y="-452.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="436.5" y="-435.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="452.5" y="-435" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">categoria_id</text>
+<text text-anchor="start" x="574.5" y="-435.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="452.5" y="-418" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad_minima *</text>
+<text text-anchor="start" x="574.5" y="-418.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="452.5" y="-401" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad_maxima</text>
+<text text-anchor="start" x="574.5" y="-401.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="452.5" y="-384" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">porcentaje_descuento *</text>
+<text text-anchor="start" x="574.5" y="-384.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(5,2)</text>
+<text text-anchor="start" x="452.5" y="-367" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_inicio</text>
+<text text-anchor="start" x="574.5" y="-367.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="452.5" y="-350" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_fin</text>
+<text text-anchor="start" x="574.5" y="-350.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="452.5" y="-333" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activa *</text>
+<text text-anchor="start" x="574.5" y="-333.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#c1552a" points="432,-326.5 432,-501.5 639,-501.5 639,-326.5 432,-326.5"/>
+</g>
+<!-- detalle_pedido&#45;&gt;regla_descuento -->
+<g id="m4_edge11" class="edge">
+<title>detalle_pedido:e&#45;&gt;regla_descuento:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M230.3,-544.35C314.5,-537.4 334.21,-477.37 420.73,-472.34"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="222.99,-544.64 213.84,-540.95 218.5,-544.82 214,-545 214,-545 214,-545 218.5,-544.82 214.16,-549.05 222.99,-544.64 222.99,-544.64"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="226.59" cy="-544.5" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="431.47,-467.53 431.73,-476.52 429.93,-476.58 429.67,-467.58 431.47,-467.53"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="432.5,-472 428,-472.13 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="424.4" cy="-472.23" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="285" y="-533.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">regla_descuento_id</text>
+</g>
+<!-- producto@ -->
+<g id="m4_node12" class="node">
+<title>producto@</title>
+<polygon fill="white" stroke="transparent" points="479.5,-542 479.5,-582 591.5,-582 591.5,-542 479.5,-542"/>
+<text text-anchor="start" x="484.5" y="-568.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#5c7f42">producto</text>
+<text text-anchor="start" x="484.5" y="-549.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Catálogo y Stock</text>
+<polygon fill="none" stroke="#5c7f42" stroke-dasharray="5,2" points="479.5,-542 479.5,-582 591.5,-582 591.5,-542 479.5,-542"/>
+</g>
+<!-- detalle_pedido&#45;&gt;producto@ -->
+<g id="m4_edge10" class="edge">
+<title>detalle_pedido:e&#45;&gt;producto@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M230.36,-562C311.51,-562 401.28,-562 462.12,-562"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="223,-562 214,-557.95 218.5,-562 214,-562 214,-562 214,-562 218.5,-562 214,-566.05 223,-562 223,-562"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="226.6" cy="-562" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="470.36,-557.5 470.36,-566.5 468.56,-566.5 468.56,-557.5 470.36,-557.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="471.26,-562 466.76,-562 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="465.86,-557.5 465.86,-566.5 464.06,-566.5 464.06,-557.5 465.86,-557.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="466.76,-562 462.26,-562 "/>
+<text text-anchor="start" x="301.5" y="-564.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">producto_id</text>
+</g>
+<!-- categoria@ -->
+<g id="m4_node10" class="node">
+<title>categoria@</title>
+<polygon fill="white" stroke="transparent" points="852,-418 852,-458 964,-458 964,-418 852,-418"/>
+<text text-anchor="start" x="857" y="-444.4" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#5c7f42">categoria</text>
+<text text-anchor="start" x="857" y="-425.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Catálogo y Stock</text>
+<polygon fill="none" stroke="#5c7f42" stroke-dasharray="5,2" points="852,-418 852,-458 964,-458 964,-418 852,-418"/>
+</g>
+<!-- regla_descuento&#45;&gt;categoria@ -->
+<g id="m4_edge1" class="edge">
+<title>regla_descuento:e&#45;&gt;categoria@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M656.05,-438C716.76,-438 782.86,-438 831.97,-438"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="648.5,-438 639.5,-433.95 644,-438 639.5,-438 639.5,-438 639.5,-438 644,-438 639.5,-442.05 648.5,-438 648.5,-438"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="652.1" cy="-438" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="842.86,-433.5 842.86,-442.5 841.06,-442.5 841.06,-433.5 842.86,-433.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="843.76,-438 839.26,-438 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="835.66" cy="-438" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="704" y="-440.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">categoria_id</text>
+</g>
+<!-- medio_pago -->
+<g id="m4_node6" class="node">
+<title>medio_pago</title>
+<polygon fill="#fbebe2" stroke="transparent" points="468.5,-100.5 468.5,-173.5 602.5,-173.5 602.5,-100.5 468.5,-100.5"/>
+<polygon fill="#c1552a" stroke="transparent" points="469.5,-152 469.5,-172 601.5,-172 601.5,-152 469.5,-152"/>
+<text text-anchor="start" x="472.5" y="-159.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">medio_pago</text>
+<text text-anchor="start" x="472.5" y="-141.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="491.5" y="-142" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="543.5" y="-141.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="472.5" y="-124.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="491.5" y="-124" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="543.5" y="-124.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="491.5" y="-107" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activo *</text>
+<text text-anchor="start" x="543.5" y="-107.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#c1552a" points="468.5,-100.5 468.5,-173.5 602.5,-173.5 602.5,-100.5 468.5,-100.5"/>
+</g>
+<!-- pasarela -->
+<g id="m4_node7" class="node">
+<title>pasarela</title>
+<polygon fill="#fbebe2" stroke="transparent" points="468.5,-213.5 468.5,-286.5 602.5,-286.5 602.5,-213.5 468.5,-213.5"/>
+<polygon fill="#c1552a" stroke="transparent" points="469.5,-265 469.5,-285 601.5,-285 601.5,-265 469.5,-265"/>
+<text text-anchor="start" x="472.5" y="-272.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">pasarela</text>
+<text text-anchor="start" x="472.5" y="-254.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="491.5" y="-255" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="543.5" y="-254.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="472.5" y="-237.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="491.5" y="-237" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="543.5" y="-237.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="491.5" y="-220" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activa *</text>
+<text text-anchor="start" x="543.5" y="-220.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#c1552a" points="468.5,-213.5 468.5,-286.5 602.5,-286.5 602.5,-213.5 468.5,-213.5"/>
+</g>
+<!-- transaccion_pago -->
+<g id="m4_node8" class="node">
+<title>transaccion_pago</title>
+<polygon fill="#fbebe2" stroke="transparent" points="8,-80 8,-272 226,-272 226,-80 8,-80"/>
+<polygon fill="#c1552a" stroke="transparent" points="9,-251 9,-271 225,-271 225,-251 9,-251"/>
+<text text-anchor="start" x="12" y="-258.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">transaccion_pago</text>
+<text text-anchor="start" x="12" y="-240.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="31" y="-241" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="155" y="-240.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-223.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="31" y="-223" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">pedido_id *</text>
+<text text-anchor="start" x="155" y="-223.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-206.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="31" y="-206" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">pasarela_id</text>
+<text text-anchor="start" x="155" y="-206.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-189.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="31" y="-189" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">medio_pago_id *</text>
+<text text-anchor="start" x="155" y="-189.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-172.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="31" y="-172" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">buy_order</text>
+<text text-anchor="start" x="155" y="-172.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(26)</text>
+<text text-anchor="start" x="31" y="-155" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">token_inicio</text>
+<text text-anchor="start" x="155" y="-155.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(100)</text>
+<text text-anchor="start" x="31" y="-138" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">codigo_autorizacion</text>
+<text text-anchor="start" x="155" y="-138.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<text text-anchor="start" x="12" y="-121.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="31" y="-121" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">estado_transaccion_id *</text>
+<text text-anchor="start" x="155" y="-121.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="31" y="-104" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">monto *</text>
+<text text-anchor="start" x="155" y="-104.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="31" y="-87" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_transaccion *</text>
+<text text-anchor="start" x="155" y="-87.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<polygon fill="none" stroke="#c1552a" points="8,-80 8,-272 226,-272 226,-80 8,-80"/>
+</g>
+<!-- transaccion_pago&#45;&gt;pedido -->
+<g id="m4_edge12" class="edge">
+<title>transaccion_pago:e&#45;&gt;pedido:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M241.89,-229.59C299.9,-255.08 359.24,-409.08 379,-463 413.21,-556.36 340.66,-898.66 429.4,-919.96"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="234.78,-227.98 226.89,-222.05 230.39,-226.99 226,-226 226,-226 226,-226 230.39,-226.99 225.11,-229.95 234.78,-227.98 234.78,-227.98"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="238.29" cy="-228.78" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="438.12,-916.43 437.09,-925.37 435.31,-925.16 436.33,-916.22 438.12,-916.43"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="438.5,-921 434.03,-920.49 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="433.65,-915.92 432.62,-924.86 430.84,-924.65 431.86,-915.71 433.65,-915.92"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="434.03,-920.49 429.56,-919.98 "/>
+<text text-anchor="start" x="307" y="-465.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">pedido_id</text>
+</g>
+<!-- transaccion_pago&#45;&gt;medio_pago -->
+<g id="m4_edge14" class="edge">
+<title>transaccion_pago:e&#45;&gt;medio_pago:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M242.38,-191.63C335.55,-187.3 362.69,-146.58 459.25,-144.12"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="235,-191.8 225.91,-187.95 230.5,-191.9 226,-192 226,-192 226,-192 230.5,-191.9 226.09,-196.05 235,-191.8 235,-191.8"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="238.6" cy="-191.71" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="467.54,-139.51 467.66,-148.51 465.86,-148.53 465.74,-139.53 467.54,-139.51"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="468.5,-144 464,-144.06 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="463.04,-139.57 463.16,-148.57 461.36,-148.59 461.24,-139.59 463.04,-139.57"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="464,-144.06 459.5,-144.11 "/>
+<text text-anchor="start" x="295" y="-189.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">medio_pago_id</text>
+</g>
+<!-- transaccion_pago&#45;&gt;pasarela -->
+<g id="m4_edge13" class="edge">
+<title>transaccion_pago:e&#45;&gt;pasarela:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M242.38,-209.37C334.71,-213.67 362.19,-253.69 456.64,-256.81"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="235,-209.2 226.09,-204.95 230.5,-209.1 226,-209 226,-209 226,-209 230.5,-209.1 225.91,-213.05 235,-209.2 235,-209.2"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="238.6" cy="-209.29" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="467.67,-252.49 467.53,-261.48 465.73,-261.46 465.87,-252.46 467.67,-252.49"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="468.5,-257 464,-256.93 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="460.4" cy="-256.87" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="303.5" y="-244.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">pasarela_id</text>
+</g>
+<!-- estado_transaccion -->
+<g id="m4_node9" class="node">
+<title>estado_transaccion</title>
+<polygon fill="#fbebe2" stroke="transparent" points="460.5,-4 460.5,-60 610.5,-60 610.5,-4 460.5,-4"/>
+<polygon fill="#c1552a" stroke="transparent" points="461.5,-39 461.5,-59 609.5,-59 609.5,-39 461.5,-39"/>
+<text text-anchor="start" x="464.5" y="-46.6" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">estado_transaccion</text>
+<text text-anchor="start" x="464.5" y="-28.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="491.5" y="-29" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="547.5" y="-28.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="464.5" y="-11.6" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="491.5" y="-11" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">nombre *</text>
+<text text-anchor="start" x="547.5" y="-11.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<polygon fill="none" stroke="#c1552a" points="460.5,-4 460.5,-60 610.5,-60 610.5,-4 460.5,-4"/>
+</g>
+<!-- transaccion_pago&#45;&gt;estado_transaccion -->
+<g id="m4_edge15" class="edge">
+<title>transaccion_pago:e&#45;&gt;estado_transaccion:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M242.32,-122.3C336.58,-114.04 353.15,-34.85 451.38,-30.21"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="234.99,-122.62 225.83,-118.95 230.5,-122.81 226,-123 226,-123 226,-123 230.5,-122.81 226.17,-127.05 234.99,-122.62 234.99,-122.62"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="238.59" cy="-122.46" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="459.5,-25.52 459.7,-34.52 457.91,-34.56 457.7,-25.56 459.5,-25.52"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="460.5,-30 456,-30.1 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="455,-25.63 455.21,-34.62 453.41,-34.67 453.2,-25.67 455,-25.63"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="456,-30.1 451.5,-30.21 "/>
+<text text-anchor="start" x="279" y="-116.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">estado_transaccion_id</text>
+</g>
+</g>
+</svg>
+<rect x="1682.0" y="1420.0" width="926" height="441" rx="10" fill="white" stroke="#7B52AB" stroke-width="2"/>
+<rect x="1682.0" y="1420.0" width="926" height="44" rx="10" fill="#7B52AB"/><rect x="1682.0" y="1454.0" width="926" height="10" fill="#7B52AB"/>
+<text x="1700.0" y="1449.0" font-size="20" font-weight="bold" fill="white">Devoluciones</text>
+<text x="2590" y="1449.0" font-size="14" fill="white" text-anchor="end">3 tablas · 7 relaciones</text>
+<svg x="1682.0" y="1464.0" width="926" height="397" viewBox="0.00 0.00 926.00 396.50">
+<g id="m5_graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 378.5)">
+<title>G</title>
+
+<!-- devolucion -->
+<g id="m5_node1" class="node">
+<title>devolucion</title>
+<polygon fill="#f1e9f5" stroke="transparent" points="387,-180 387,-355 575,-355 575,-180 387,-180"/>
+<polygon fill="#7b52ab" stroke="transparent" points="388,-333.5 388,-353.5 574,-353.5 574,-333.5 388,-333.5"/>
+<text text-anchor="start" x="391" y="-341.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">devolucion</text>
+<text text-anchor="start" x="391" y="-323.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="410" y="-323.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="504" y="-322.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="391" y="-306.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">UQ</text>
+<text text-anchor="start" x="410" y="-305.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">numero *</text>
+<text text-anchor="start" x="504" y="-305.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bigint</text>
+<text text-anchor="start" x="410" y="-288.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="504" y="-288.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="391" y="-272.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="410" y="-271.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">pedido_id *</text>
+<text text-anchor="start" x="504" y="-271.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="391" y="-255.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="410" y="-254.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="504" y="-254.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="391" y="-238.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="410" y="-237.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">turno_caja_id</text>
+<text text-anchor="start" x="504" y="-237.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="410" y="-220.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">motivo *</text>
+<text text-anchor="start" x="504" y="-220.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(300)</text>
+<text text-anchor="start" x="410" y="-203.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">total_reembolso *</text>
+<text text-anchor="start" x="504" y="-203.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="410" y="-186.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">redondeo *</text>
+<text text-anchor="start" x="504" y="-186.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<polygon fill="none" stroke="#7b52ab" points="387,-180 387,-355 575,-355 575,-180 387,-180"/>
+</g>
+<!-- pedido@ -->
+<g id="m5_node6" class="node">
+<title>pedido@</title>
+<polygon fill="white" stroke="transparent" points="776.5,-316.5 776.5,-356.5 847.5,-356.5 847.5,-316.5 776.5,-316.5"/>
+<text text-anchor="start" x="782" y="-342.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#c1552a">pedido</text>
+<text text-anchor="start" x="782" y="-324.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Ventas</text>
+<polygon fill="none" stroke="#c1552a" stroke-dasharray="5,2" points="776.5,-316.5 776.5,-356.5 847.5,-356.5 847.5,-316.5 776.5,-316.5"/>
+</g>
+<!-- devolucion&#45;&gt;pedido@ -->
+<g id="m5_edge1" class="edge">
+<title>devolucion:e&#45;&gt;pedido@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M591.41,-274.95C652.18,-278.21 716.54,-298.5 759.76,-314.9"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="584,-274.75 575.11,-270.45 579.5,-274.62 575,-274.5 575,-274.5 575,-274.5 579.5,-274.62 574.89,-278.55 584,-274.75 584,-274.75"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="587.6" cy="-274.85" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="769.17,-313.71 765.93,-322.11 764.25,-321.46 767.49,-313.06 769.17,-313.71"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="768.39,-318.23 764.19,-316.61 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="764.97,-312.09 761.73,-320.49 760.05,-319.84 763.29,-311.44 764.97,-312.09"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="764.19,-316.61 759.99,-314.99 "/>
+<text text-anchor="start" x="636.5" y="-293.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">pedido_id</text>
+</g>
+<!-- turno_caja@ -->
+<g id="m5_node7" class="node">
+<title>turno_caja@</title>
+<polygon fill="white" stroke="transparent" points="763,-156.5 763,-196.5 861,-196.5 861,-156.5 763,-156.5"/>
+<text text-anchor="start" x="768" y="-182.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#2f8579">turno_caja</text>
+<text text-anchor="start" x="768" y="-164.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Caja y Turnos</text>
+<polygon fill="none" stroke="#2f8579" stroke-dasharray="5,2" points="763,-156.5 763,-196.5 861,-196.5 861,-156.5 763,-156.5"/>
+</g>
+<!-- devolucion&#45;&gt;turno_caja@ -->
+<g id="m5_edge3" class="edge">
+<title>devolucion:e&#45;&gt;turno_caja@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M591.41,-239.04C645.06,-236.13 701.45,-219.74 743.66,-204.48"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="584,-239.25 574.89,-235.45 579.5,-239.37 575,-239.5 575,-239.5 575,-239.5 579.5,-239.37 575.11,-243.55 584,-239.25 584,-239.25"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="587.6" cy="-239.15" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="752.49,-196.41 755.61,-204.85 753.92,-205.48 750.8,-197.03 752.49,-196.41"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="754.89,-200.32 750.67,-201.88 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="747.3" cy="-203.13" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="628" y="-236.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">turno_caja_id</text>
+</g>
+<!-- usuario@ -->
+<g id="m5_node8" class="node">
+<title>usuario@</title>
+<polygon fill="white" stroke="transparent" points="742,-236.5 742,-276.5 882,-276.5 882,-236.5 742,-236.5"/>
+<text text-anchor="start" x="747" y="-262.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">usuario</text>
+<text text-anchor="start" x="747" y="-244.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="742,-236.5 742,-276.5 882,-276.5 882,-236.5 742,-236.5"/>
+</g>
+<!-- devolucion&#45;&gt;usuario@ -->
+<g id="m5_edge2" class="edge">
+<title>devolucion:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M591.35,-256.5C636.54,-256.5 684.95,-256.5 724.79,-256.5"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="584,-256.5 575,-252.45 579.5,-256.5 575,-256.5 575,-256.5 575,-256.5 579.5,-256.5 575,-260.55 584,-256.5 584,-256.5"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="587.6" cy="-256.5" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="733.04,-252 733.04,-261 731.24,-261 731.24,-252 733.04,-252"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="733.94,-256.5 729.44,-256.5 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="728.54,-252 728.54,-261 726.74,-261 726.74,-252 728.54,-252"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="729.44,-256.5 724.94,-256.5 "/>
+<text text-anchor="start" x="635.5" y="-259.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- devolucion_detalle -->
+<g id="m5_node2" class="node">
+<title>devolucion_detalle</title>
+<polygon fill="#f1e9f5" stroke="transparent" points="8,-195.5 8,-319.5 202,-319.5 202,-195.5 8,-195.5"/>
+<polygon fill="#7b52ab" stroke="transparent" points="9,-298.5 9,-318.5 201,-318.5 201,-298.5 9,-298.5"/>
+<text text-anchor="start" x="12" y="-306.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">devolucion_detalle</text>
+<text text-anchor="start" x="12" y="-288.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="28" y="-288.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="131" y="-287.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-271.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28" y="-270.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">devolucion_id *</text>
+<text text-anchor="start" x="131" y="-270.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-254.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28" y="-253.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">detalle_pedido_id *</text>
+<text text-anchor="start" x="131" y="-253.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="28" y="-236.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cantidad *</text>
+<text text-anchor="start" x="131" y="-236.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="28" y="-219.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">monto_reembolso *</text>
+<text text-anchor="start" x="131" y="-219.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="28" y="-202.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">reingresa_stock *</text>
+<text text-anchor="start" x="131" y="-202.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#7b52ab" points="8,-195.5 8,-319.5 202,-319.5 202,-195.5 8,-195.5"/>
+</g>
+<!-- devolucion_detalle&#45;&gt;devolucion -->
+<g id="m5_edge4" class="edge">
+<title>devolucion_detalle:e&#45;&gt;devolucion:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M218.56,-274.2C286.9,-280.13 305.96,-322.03 377.95,-325.3"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="210.99,-273.88 202.17,-269.45 206.5,-273.69 202,-273.5 202,-273.5 202,-273.5 206.5,-273.69 201.83,-277.55 210.99,-273.88 210.99,-273.88"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="214.59" cy="-274.03" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="386.2,-320.98 386,-329.98 384.2,-329.94 384.4,-320.94 386.2,-320.98"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="387,-325.5 382.5,-325.4 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="381.7,-320.88 381.5,-329.88 379.7,-329.84 379.9,-320.84 381.7,-320.88"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="382.5,-325.4 378,-325.3 "/>
+<text text-anchor="start" x="263.5" y="-319.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">devolucion_id</text>
+</g>
+<!-- detalle_pedido@ -->
+<g id="m5_node4" class="node">
+<title>detalle_pedido@</title>
+<polygon fill="white" stroke="transparent" points="427,-99.5 427,-139.5 535,-139.5 535,-99.5 427,-99.5"/>
+<text text-anchor="start" x="432" y="-125.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#c1552a">detalle_pedido</text>
+<text text-anchor="start" x="432" y="-107.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Ventas</text>
+<polygon fill="none" stroke="#c1552a" stroke-dasharray="5,2" points="427,-99.5 427,-139.5 535,-139.5 535,-99.5 427,-99.5"/>
+</g>
+<!-- devolucion_detalle&#45;&gt;detalle_pedido@ -->
+<g id="m5_edge5" class="edge">
+<title>devolucion_detalle:e&#45;&gt;detalle_pedido@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M218.28,-254.81C292.48,-248.23 303.4,-196.01 379,-160.5 389.07,-155.77 399.84,-151.05 410.46,-146.59"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="210.99,-255.12 201.83,-251.45 206.5,-255.31 202,-255.5 202,-255.5 202,-255.5 206.5,-255.31 202.17,-259.55 210.99,-255.12 210.99,-255.12"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="214.59" cy="-254.97" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="416.37,-139.26 419.82,-147.57 418.16,-148.26 414.71,-139.95 416.37,-139.26"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="418.93,-143.07 414.77,-144.79 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="412.21,-140.98 415.67,-149.29 414.01,-149.99 410.55,-141.68 412.21,-140.98"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="414.77,-144.79 410.62,-146.52 "/>
+<text text-anchor="start" x="255" y="-247.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">detalle_pedido_id</text>
+</g>
+<!-- devolucion_pago -->
+<g id="m5_node3" class="node">
+<title>devolucion_pago</title>
+<polygon fill="#f1e9f5" stroke="transparent" points="15,-4 15,-111 195,-111 195,-4 15,-4"/>
+<polygon fill="#7b52ab" stroke="transparent" points="16,-89.5 16,-109.5 194,-109.5 194,-89.5 16,-89.5"/>
+<text text-anchor="start" x="19" y="-97.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">devolucion_pago</text>
+<text text-anchor="start" x="19" y="-79.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="35" y="-79.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="124" y="-78.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="19" y="-62.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="35" y="-61.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">devolucion_id *</text>
+<text text-anchor="start" x="124" y="-61.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="19" y="-45.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="35" y="-44.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">medio_pago_id *</text>
+<text text-anchor="start" x="124" y="-44.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="35" y="-27.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">monto *</text>
+<text text-anchor="start" x="124" y="-27.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="35" y="-10.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">referencia</text>
+<text text-anchor="start" x="124" y="-10.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(50)</text>
+<polygon fill="none" stroke="#7b52ab" points="15,-4 15,-111 195,-111 195,-4 15,-4"/>
+</g>
+<!-- devolucion_pago&#45;&gt;devolucion -->
+<g id="m5_edge6" class="edge">
+<title>devolucion_pago:e&#45;&gt;devolucion:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M211.36,-65.21C275.43,-71.09 291.88,-112.89 334,-171.5 374.26,-227.53 320.16,-316.65 377.68,-324.89"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="203.99,-64.89 195.18,-60.45 199.5,-64.7 195,-64.5 195,-64.5 195,-64.5 199.5,-64.7 194.82,-68.55 203.99,-64.89 203.99,-64.89"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="207.59" cy="-65.05" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="386.4,-320.95 385.81,-329.93 384.01,-329.81 384.6,-320.83 386.4,-320.95"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="387,-325.5 382.51,-325.2 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="381.91,-320.65 381.32,-329.64 379.52,-329.52 380.11,-320.54 381.91,-320.65"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="382.51,-325.2 378.02,-324.91 "/>
+<text text-anchor="start" x="263.5" y="-174.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">devolucion_id</text>
+</g>
+<!-- medio_pago@ -->
+<g id="m5_node5" class="node">
+<title>medio_pago@</title>
+<polygon fill="white" stroke="transparent" points="435.5,-12.5 435.5,-52.5 526.5,-52.5 526.5,-12.5 435.5,-12.5"/>
+<text text-anchor="start" x="441" y="-38.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#c1552a">medio_pago</text>
+<text text-anchor="start" x="441" y="-20.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Ventas</text>
+<polygon fill="none" stroke="#c1552a" stroke-dasharray="5,2" points="435.5,-12.5 435.5,-52.5 526.5,-52.5 526.5,-12.5 435.5,-12.5"/>
+</g>
+<!-- devolucion_pago&#45;&gt;medio_pago@ -->
+<g id="m5_edge7" class="edge">
+<title>devolucion_pago:e&#45;&gt;medio_pago@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M211.2,-44.95C226.12,-41.83 234.17,-34.9 255,-32.5 309.82,-26.19 372.65,-26.84 417.96,-28.7"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="203.96,-45.64 194.61,-42.47 199.48,-46.07 195,-46.5 195,-46.5 195,-46.5 199.48,-46.07 195.39,-50.53 203.96,-45.64 203.96,-45.64"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="207.54" cy="-45.3" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="426.37,-24.56 425.97,-33.55 424.17,-33.47 424.57,-24.48 426.37,-24.56"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="427.07,-29.1 422.57,-28.9 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="421.87,-24.36 421.48,-33.36 419.68,-33.28 420.07,-24.29 421.87,-24.36"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="422.57,-28.9 418.08,-28.7 "/>
+<text text-anchor="start" x="260.5" y="-35.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">medio_pago_id</text>
+</g>
+</g>
+</svg>
+<rect x="1682.0" y="1921.0" width="1269" height="722" rx="10" fill="white" stroke="#2F8579" stroke-width="2"/>
+<rect x="1682.0" y="1921.0" width="1269" height="44" rx="10" fill="#2F8579"/><rect x="1682.0" y="1955.0" width="1269" height="10" fill="#2F8579"/>
+<text x="1700.0" y="1950.0" font-size="20" font-weight="bold" fill="white">Caja y Turnos</text>
+<text x="2933" y="1950.0" font-size="14" fill="white" text-anchor="end">6 tablas · 12 relaciones</text>
+<svg x="1682.0" y="1965.0" width="1269" height="678" viewBox="0.00 0.00 1269.00 677.50">
+<g id="m6_graph0" class="graph" transform="scale(1 1) rotate(0) translate(18 659.5)">
+<title>G</title>
+
+<!-- caja -->
+<g id="m6_node1" class="node">
+<title>caja</title>
+<polygon fill="#e4f2f0" stroke="transparent" points="800.5,-403.5 800.5,-493.5 915.5,-493.5 915.5,-403.5 800.5,-403.5"/>
+<polygon fill="#2f8579" stroke="transparent" points="802,-472.5 802,-492.5 915,-492.5 915,-472.5 802,-472.5"/>
+<text text-anchor="start" x="805" y="-480.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">caja</text>
+<text text-anchor="start" x="805" y="-462.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="821" y="-462.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="891" y="-461.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="805" y="-445.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="821" y="-444.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">sucursal_id *</text>
+<text text-anchor="start" x="891" y="-444.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="821" y="-427.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">numero *</text>
+<text text-anchor="start" x="891" y="-427.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<text text-anchor="start" x="821" y="-410.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">activa *</text>
+<text text-anchor="start" x="891" y="-410.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<polygon fill="none" stroke="#2f8579" points="800.5,-403.5 800.5,-493.5 915.5,-493.5 915.5,-403.5 800.5,-403.5"/>
+</g>
+<!-- sucursal@ -->
+<g id="m6_node7" class="node">
+<title>sucursal@</title>
+<polygon fill="white" stroke="transparent" points="1085,-426.5 1085,-466.5 1225,-466.5 1225,-426.5 1085,-426.5"/>
+<text text-anchor="start" x="1090" y="-452.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">sucursal</text>
+<text text-anchor="start" x="1090" y="-434.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="1085,-426.5 1085,-466.5 1225,-466.5 1225,-426.5 1085,-426.5"/>
+</g>
+<!-- caja&#45;&gt;sucursal@ -->
+<g id="m6_edge1" class="edge">
+<title>caja:e&#45;&gt;sucursal@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M932.23,-446.5C978.16,-446.5 1027.42,-446.5 1067.82,-446.5"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="925,-446.5 916,-442.45 920.5,-446.5 916,-446.5 916,-446.5 916,-446.5 920.5,-446.5 916,-450.55 925,-446.5 925,-446.5"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="928.6" cy="-446.5" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1075.93,-442 1075.93,-451 1074.13,-451 1074.13,-442 1075.93,-442"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1076.83,-446.5 1072.33,-446.5 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="1071.43,-442 1071.43,-451 1069.63,-451 1069.63,-442 1071.43,-442"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="1072.33,-446.5 1067.83,-446.5 "/>
+<text text-anchor="start" x="981" y="-449.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">sucursal_id</text>
+</g>
+<!-- turno_caja -->
+<g id="m6_node2" class="node">
+<title>turno_caja</title>
+<polygon fill="#e4f2f0" stroke="transparent" points="361,-99 361,-342 627,-342 627,-99 361,-99"/>
+<polygon fill="#2f8579" stroke="transparent" points="362,-320.5 362,-340.5 626,-340.5 626,-320.5 362,-320.5"/>
+<text text-anchor="start" x="365" y="-328.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">turno_caja</text>
+<text text-anchor="start" x="365" y="-310.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="381" y="-310.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="556" y="-309.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="365" y="-293.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="381" y="-292.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="556" y="-292.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="365" y="-276.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="381" y="-275.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">caja_id *</text>
+<text text-anchor="start" x="556" y="-275.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="381" y="-258.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_apertura *</text>
+<text text-anchor="start" x="556" y="-258.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="381" y="-241.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha_cierre</text>
+<text text-anchor="start" x="556" y="-241.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="381" y="-224.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">monto_apertura_efectivo *</text>
+<text text-anchor="start" x="556" y="-224.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="381" y="-207.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">monto_cierre_esperado_efectivo *</text>
+<text text-anchor="start" x="556" y="-207.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="381" y="-190.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">monto_cierre_real_efectivo</text>
+<text text-anchor="start" x="556" y="-190.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="381" y="-173.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cierre_tipo</text>
+<text text-anchor="start" x="556" y="-173.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(12)</text>
+<text text-anchor="start" x="365" y="-157.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="381" y="-156.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cerrado_por</text>
+<text text-anchor="start" x="556" y="-156.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="381" y="-139.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">cierre_motivo</text>
+<text text-anchor="start" x="556" y="-139.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(500)</text>
+<text text-anchor="start" x="365" y="-123.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="381" y="-122.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">arqueo_por</text>
+<text text-anchor="start" x="556" y="-122.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="381" y="-105.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">arqueo_fecha</text>
+<text text-anchor="start" x="556" y="-105.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<polygon fill="none" stroke="#2f8579" points="361,-99 361,-342 627,-342 627,-99 361,-99"/>
+</g>
+<!-- turno_caja&#45;&gt;caja -->
+<g id="m6_edge3" class="edge">
+<title>turno_caja:e&#45;&gt;caja:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M642.69,-282.91C691.68,-309.43 743.18,-446.95 791.93,-462.98"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="635.66,-280.94 628.1,-274.6 631.33,-279.72 627,-278.5 627,-278.5 627,-278.5 631.33,-279.72 625.9,-282.4 635.66,-280.94 635.66,-280.94"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="639.13" cy="-281.91" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="800.86,-459.91 799.37,-468.79 797.59,-468.49 799.08,-459.61 800.86,-459.91"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="801,-464.5 796.56,-463.75 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="796.42,-459.17 794.93,-468.04 793.15,-467.74 794.65,-458.87 796.42,-459.17"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="796.56,-463.75 792.12,-463.01 "/>
+<text text-anchor="start" x="692" y="-401.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">caja_id</text>
+</g>
+<!-- usuario@ -->
+<g id="m6_node8" class="node">
+<title>usuario@</title>
+<polygon fill="white" stroke="transparent" points="788,-198.5 788,-238.5 928,-238.5 928,-198.5 788,-198.5"/>
+<text text-anchor="start" x="793" y="-224.9" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="12.00" fill="#3d6c94">usuario</text>
+<text text-anchor="start" x="793" y="-206.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#777777">módulo Accesos y Organización</text>
+<polygon fill="none" stroke="#3d6c94" stroke-dasharray="5,2" points="788,-198.5 788,-238.5 928,-238.5 928,-198.5 788,-198.5"/>
+</g>
+<!-- turno_caja&#45;&gt;usuario@ -->
+<g id="m6_edge2" class="edge">
+<title>turno_caja:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M643.33,-294.94C702.09,-290.97 763.04,-266.85 804.74,-246.74"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="635.99,-295.19 626.86,-291.45 631.5,-295.34 627,-295.5 627,-295.5 627,-295.5 631.5,-295.34 627.14,-299.55 635.99,-295.19 635.99,-295.19"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="639.59" cy="-295.07" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="810.28,-239.01 814.25,-247.09 812.63,-247.88 808.67,-239.8 810.28,-239.01"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="813.07,-242.65 809.03,-244.63 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="806.24,-240.99 810.21,-249.07 808.59,-249.86 804.63,-241.78 806.24,-240.99"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="809.03,-244.63 804.99,-246.62 "/>
+<text text-anchor="start" x="684.5" y="-291.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- turno_caja&#45;&gt;usuario@ -->
+<g id="m6_edge10" class="edge">
+<title>turno_caja:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M643.25,-158.95C693.76,-161.68 746.8,-176.38 787.41,-190.49"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="636,-158.75 627.11,-154.45 631.5,-158.62 627,-158.5 627,-158.5 627,-158.5 631.5,-158.62 626.89,-162.55 636,-158.75 636,-158.75"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="639.6" cy="-158.85" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="799.18,-189.9 796.17,-198.38 794.47,-197.78 797.49,-189.3 799.18,-189.9"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="798.52,-194.44 794.28,-192.93 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="790.89" cy="-191.73" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="680" y="-175.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">cerrado_por</text>
+</g>
+<!-- turno_caja&#45;&gt;usuario@ -->
+<g id="m6_edge11" class="edge">
+<title>turno_caja:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M643.32,-124.67C679.63,-125.56 694.86,-130.13 735,-145.5 762.79,-156.14 791.45,-172.94 814.01,-187.75"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="636,-124.6 627.04,-120.45 631.5,-124.55 627,-124.5 627,-124.5 627,-124.5 631.5,-124.55 626.96,-128.55 636,-124.6 636,-124.6"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="639.6" cy="-124.63" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="825.68,-190.14 820.67,-197.62 819.18,-196.62 824.18,-189.14 825.68,-190.14"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="823.92,-194.38 820.18,-191.88 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="817.19" cy="-189.87" rx="3.6" ry="3.6"/>
+<text text-anchor="start" x="681.5" y="-148.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">arqueo_por</text>
+</g>
+<!-- turno_revision -->
+<g id="m6_node3" class="node">
+<title>turno_revision</title>
+<polygon fill="#e4f2f0" stroke="transparent" points="11,-513.5 11,-637.5 191,-637.5 191,-513.5 11,-513.5"/>
+<polygon fill="#2f8579" stroke="transparent" points="12,-616.5 12,-636.5 190,-636.5 190,-616.5 12,-616.5"/>
+<text text-anchor="start" x="15" y="-624.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">turno_revision</text>
+<text text-anchor="start" x="15" y="-606.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="46" y="-606.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="126" y="-605.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="15" y="-589.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK,UQ</text>
+<text text-anchor="start" x="46" y="-588.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">turno_caja_id *</text>
+<text text-anchor="start" x="126" y="-588.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="15" y="-572.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="46" y="-571.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="126" y="-571.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="46" y="-554.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="126" y="-554.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="46" y="-537.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">conforme *</text>
+<text text-anchor="start" x="126" y="-537.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">bool</text>
+<text text-anchor="start" x="46" y="-520.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">observacion</text>
+<text text-anchor="start" x="126" y="-520.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(500)</text>
+<polygon fill="none" stroke="#2f8579" points="11,-513.5 11,-637.5 191,-637.5 191,-513.5 11,-513.5"/>
+</g>
+<!-- turno_revision&#45;&gt;turno_caja -->
+<g id="m6_edge4" class="edge">
+<title>turno_revision:e&#45;&gt;turno_caja:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M199.86,-583.45C231.67,-542.17 324,-354.77 353.71,-318.57"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="194.69,-594.23 188.64,-587.56 189.97,-586.35 196.02,-593.02 194.69,-594.23"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="191,-591.5 194.33,-588.47 "/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="197" cy="-586.05" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="357.43,-309.62 363.19,-316.53 361.8,-317.69 356.05,-310.77 357.43,-309.62"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="361,-312.5 357.54,-315.38 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="353.97,-312.5 359.73,-319.41 358.34,-320.56 352.59,-313.65 353.97,-312.5"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="357.54,-315.38 354.08,-318.26 "/>
+<text text-anchor="start" x="247" y="-503.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">turno_caja_id</text>
+</g>
+<!-- turno_revision&#45;&gt;usuario@ -->
+<g id="m6_edge5" class="edge">
+<title>turno_revision:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M207.07,-569.72C222.56,-560.86 224.18,-538.68 247,-527.5 446.73,-429.62 554.11,-545.94 735,-416.5 793.21,-374.84 829.31,-295.92 846,-251.33"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="199.76,-571.44 190.07,-569.56 195.38,-572.47 191,-573.5 191,-573.5 191,-573.5 195.38,-572.47 191.93,-577.44 199.76,-571.44 199.76,-571.44"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="203.26" cy="-570.61" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="844.64,-241.93 853.1,-245.01 852.48,-246.71 844.02,-243.62 844.64,-241.93"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="849.18,-242.63 847.63,-246.85 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="843.1,-246.16 851.55,-249.24 850.94,-250.93 842.48,-247.85 843.1,-246.16"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="847.63,-246.85 846.09,-251.08 "/>
+<text text-anchor="start" x="471" y="-493.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- turno_correccion -->
+<g id="m6_node4" class="node">
+<title>turno_correccion</title>
+<polygon fill="#e4f2f0" stroke="transparent" points="8,-281.5 8,-473.5 194,-473.5 194,-281.5 8,-281.5"/>
+<polygon fill="#2f8579" stroke="transparent" points="9,-452.5 9,-472.5 193,-472.5 193,-452.5 9,-452.5"/>
+<text text-anchor="start" x="12" y="-460.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">turno_correccion</text>
+<text text-anchor="start" x="12" y="-442.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="28" y="-442.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="123" y="-441.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-425.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28" y="-424.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">turno_caja_id *</text>
+<text text-anchor="start" x="123" y="-424.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="12" y="-408.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="28" y="-407.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="123" y="-407.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="28" y="-390.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="123" y="-390.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="28" y="-373.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">campo *</text>
+<text text-anchor="start" x="123" y="-373.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(10)</text>
+<text text-anchor="start" x="28" y="-356.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">valor_anterior *</text>
+<text text-anchor="start" x="123" y="-356.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="28" y="-339.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">valor_nuevo *</text>
+<text text-anchor="start" x="123" y="-339.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="28" y="-322.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">esperado_anterior</text>
+<text text-anchor="start" x="123" y="-322.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="28" y="-305.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">esperado_nuevo</text>
+<text text-anchor="start" x="123" y="-305.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">numeric(12,2)</text>
+<text text-anchor="start" x="28" y="-288.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">motivo *</text>
+<text text-anchor="start" x="123" y="-288.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(500)</text>
+<polygon fill="none" stroke="#2f8579" points="8,-281.5 8,-473.5 194,-473.5 194,-281.5 8,-281.5"/>
+</g>
+<!-- turno_correccion&#45;&gt;turno_caja -->
+<g id="m6_edge6" class="edge">
+<title>turno_correccion:e&#45;&gt;turno_caja:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M209.83,-423.88C225.73,-414.9 225.91,-391.21 247,-375.5 290.88,-342.8 301.94,-315.63 351.92,-312.75"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="202.77,-425.49 193.1,-423.55 198.39,-426.5 194,-427.5 194,-427.5 194,-427.5 198.39,-426.5 194.9,-431.45 202.77,-425.49 202.77,-425.49"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="206.28" cy="-424.69" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="359.98,-308.03 360.22,-317.02 358.43,-317.07 358.18,-308.08 359.98,-308.03"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="361,-312.5 356.5,-312.62 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="355.48,-308.15 355.73,-317.15 353.93,-317.2 353.68,-308.2 355.48,-308.15"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="356.5,-312.62 352,-312.75 "/>
+<text text-anchor="start" x="247" y="-378.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">turno_caja_id</text>
+</g>
+<!-- turno_correccion&#45;&gt;usuario@ -->
+<g id="m6_edge7" class="edge">
+<title>turno_correccion:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M210.42,-410.53C394.44,-411.12 452.53,-420.84 635,-362.5 709.1,-338.81 782.3,-283.46 823.37,-248.69"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="203,-410.51 194.01,-406.45 198.5,-410.51 194,-410.5 194,-410.5 194,-410.5 198.5,-410.51 193.99,-414.55 203,-410.51 203,-410.51"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="206.6" cy="-410.52" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="826.81,-239.83 832.66,-246.67 831.29,-247.84 825.44,-241 826.81,-239.83"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="830.42,-242.66 827,-245.59 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="823.39,-242.76 829.24,-249.59 827.87,-250.76 822.02,-243.93 823.39,-242.76"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="827,-245.59 823.58,-248.52 "/>
+<text text-anchor="start" x="471" y="-413.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- turno_observacion -->
+<g id="m6_node5" class="node">
+<title>turno_observacion</title>
+<polygon fill="#e4f2f0" stroke="transparent" points="15.5,-4 15.5,-111 186.5,-111 186.5,-4 15.5,-4"/>
+<polygon fill="#2f8579" stroke="transparent" points="17,-89.5 17,-109.5 186,-109.5 186,-89.5 17,-89.5"/>
+<text text-anchor="start" x="20" y="-97.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">turno_observacion</text>
+<text text-anchor="start" x="20" y="-79.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="36" y="-79.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">id</text>
+<text text-anchor="start" x="116" y="-78.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="20" y="-62.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="36" y="-61.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">turno_caja_id *</text>
+<text text-anchor="start" x="116" y="-61.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="20" y="-45.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">FK</text>
+<text text-anchor="start" x="36" y="-44.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">usuario_id *</text>
+<text text-anchor="start" x="116" y="-44.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="36" y="-27.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">fecha *</text>
+<text text-anchor="start" x="116" y="-27.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="36" y="-10.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">texto *</text>
+<text text-anchor="start" x="116" y="-10.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(1000)</text>
+<polygon fill="none" stroke="#2f8579" points="15.5,-4 15.5,-111 186.5,-111 186.5,-4 15.5,-4"/>
+</g>
+<!-- turno_observacion&#45;&gt;turno_caja -->
+<g id="m6_edge8" class="edge">
+<title>turno_observacion:e&#45;&gt;turno_caja:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M203.34,-65.6C273.78,-75.79 261.61,-154.79 308,-223.5 331.85,-258.83 317.51,-305.02 351.78,-311.69"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="195.98,-65.11 187.27,-60.46 191.49,-64.8 187,-64.5 187,-64.5 187,-64.5 191.49,-64.8 186.73,-68.54 195.98,-65.11 195.98,-65.11"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="199.57" cy="-65.35" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="360.5,-307.94 359.71,-316.9 357.91,-316.75 358.71,-307.78 360.5,-307.94"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="361,-312.5 356.52,-312.1 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="356.02,-307.54 355.23,-316.51 353.43,-316.35 354.22,-307.38 356.02,-307.54"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="356.52,-312.1 352.03,-311.71 "/>
+<text text-anchor="start" x="247" y="-226.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">turno_caja_id</text>
+</g>
+<!-- turno_observacion&#45;&gt;usuario@ -->
+<g id="m6_edge9" class="edge">
+<title>turno_observacion:e&#45;&gt;usuario@</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M203.32,-46.44C389.59,-45.02 447.56,-20.15 635,-69.5 712.65,-89.95 786.73,-150.8 826.61,-188.11"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="196,-46.47 186.98,-42.45 191.5,-46.48 187,-46.5 187,-46.5 187,-46.5 191.5,-46.48 187.02,-50.55 196,-46.47 196,-46.47"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="199.6" cy="-46.45" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="835.62,-190.45 829.43,-196.99 828.12,-195.75 834.31,-189.22 835.62,-190.45"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="833.18,-194.34 829.91,-191.24 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="832.35,-187.36 826.16,-193.89 824.86,-192.65 831.05,-186.12 832.35,-187.36"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="829.91,-191.24 826.65,-188.15 "/>
+<text text-anchor="start" x="471" y="-72.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">usuario_id</text>
+</g>
+<!-- turno_aviso -->
+<g id="m6_node6" class="node">
+<title>turno_aviso</title>
+<polygon fill="#e4f2f0" stroke="transparent" points="13,-151.5 13,-241.5 189,-241.5 189,-151.5 13,-151.5"/>
+<polygon fill="#2f8579" stroke="transparent" points="14,-220.5 14,-240.5 188,-240.5 188,-220.5 14,-220.5"/>
+<text text-anchor="start" x="17" y="-228.1" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="13.00" fill="white">turno_aviso</text>
+<text text-anchor="start" x="17" y="-210.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK,FK</text>
+<text text-anchor="start" x="45" y="-210.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">turno_caja_id</text>
+<text text-anchor="start" x="127" y="-209.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">uuid</text>
+<text text-anchor="start" x="17" y="-193.1" font-family="DejaVu Sans,Verdana,sans-serif" font-size="8.00" fill="#7a4b00">PK</text>
+<text text-anchor="start" x="45" y="-193.5" font-family="DejaVu Sans,Verdana,sans-serif" font-weight="bold" font-size="10.00">tipo</text>
+<text text-anchor="start" x="127" y="-192.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">varchar(30)</text>
+<text text-anchor="start" x="45" y="-175.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">enviado_en *</text>
+<text text-anchor="start" x="127" y="-175.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">timestamptz</text>
+<text text-anchor="start" x="45" y="-158.5" font-family="DejaVu Sans,Verdana,sans-serif" font-size="10.00">destinatarios *</text>
+<text text-anchor="start" x="127" y="-158.8" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#555555">int</text>
+<polygon fill="none" stroke="#2f8579" points="13,-151.5 13,-241.5 189,-241.5 189,-151.5 13,-151.5"/>
+</g>
+<!-- turno_aviso&#45;&gt;turno_caja -->
+<g id="m6_edge12" class="edge">
+<title>turno_aviso:e&#45;&gt;turno_caja:w</title>
+<path fill="none" stroke="#1f3864" stroke-width="1.1" d="M205.12,-215.94C247.99,-232.26 311.66,-301.41 352.02,-311.32"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="197.8,-214.38 189.85,-208.54 193.4,-213.44 189,-212.5 189,-212.5 189,-212.5 193.4,-213.44 188.15,-216.46 197.8,-214.38 197.8,-214.38"/>
+<ellipse fill="none" stroke="#1f3864" stroke-width="1.1" cx="201.32" cy="-215.13" rx="3.6" ry="3.6"/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="360.7,-307.92 359.52,-316.84 357.74,-316.61 358.91,-307.69 360.7,-307.92"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="361,-312.5 356.54,-311.91 "/>
+<polygon fill="#1f3864" stroke="#1f3864" stroke-width="1.1" points="356.23,-307.33 355.06,-316.26 353.27,-316.02 354.45,-307.1 356.23,-307.33"/>
+<polyline fill="none" stroke="#1f3864" stroke-width="1.1" points="356.54,-311.91 352.08,-311.32 "/>
+<text text-anchor="start" x="247" y="-288.3" font-family="DejaVu Sans,Verdana,sans-serif" font-size="9.00" fill="#44506a">turno_caja_id</text>
+</g>
+</g>
+</svg>
+</svg>

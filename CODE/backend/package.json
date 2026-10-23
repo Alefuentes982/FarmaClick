@@ -1,0 +1,24 @@
+{
+  "name": "farmaclick-backend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "node --watch src/server.js",
+    "start": "node src/server.js",
+    "test": "node --test",
+    "crear-admin": "node scripts/crear-admin.js"
+  },
+  "dependencies": {
+    "@supabase/supabase-js": "^2.117.2",
+    "cors": "^2.8.6",
+    "dotenv": "^18.0.5",
+    "exceljs": "^4.4.0",
+    "express": "^5.2.1",
+    "express-rate-limit": "^8.7.0",
+    "nodemailer": "^10.0.16",
+    "pdfkit": "^0.20.2",
+    "pg": "^8.23.1",
+    "zod": "^3.25.76"
+  }
+}

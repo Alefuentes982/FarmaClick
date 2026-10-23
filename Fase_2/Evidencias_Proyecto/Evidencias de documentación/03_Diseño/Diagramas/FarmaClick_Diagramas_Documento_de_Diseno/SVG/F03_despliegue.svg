@@ -1,0 +1,356 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1900" height="1290" viewBox="0 0 1900 1290"><defs>
+<linearGradient id="g_pres" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#EAF2FD"/><stop offset="1" stop-color="#D2E4FA"/></linearGradient>
+<linearGradient id="g_app" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1E0"/><stop offset="1" stop-color="#FFDDB8"/></linearGradient>
+<linearGradient id="g_data" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E8F8EE"/><stop offset="1" stop-color="#CBEDD8"/></linearGradient>
+<linearGradient id="g_infra" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFFFFF"/><stop offset="1" stop-color="#EDEEF3"/></linearGradient>
+<linearGradient id="g_ext" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF9DA"/><stop offset="1" stop-color="#FFEDA0"/></linearGradient>
+<linearGradient id="g_ci" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F3ECFB"/><stop offset="1" stop-color="#E2D2F4"/></linearGradient>
+<linearGradient id="g_red" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1EE"/><stop offset="1" stop-color="#FFD9D1"/></linearGradient>
+<linearGradient id="g_teal" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E3F4F4"/><stop offset="1" stop-color="#C5E8E8"/></linearGradient>
+<filter id="sh" x="-10%" y="-10%" width="125%" height="135%"><feDropShadow dx="2" dy="4" stdDeviation="4" flood-color="#1F2A44" flood-opacity="0.16"/></filter>
+<filter id="sh2" x="-10%" y="-10%" width="125%" height="135%"><feDropShadow dx="1" dy="2" stdDeviation="2" flood-color="#1F2A44" flood-opacity="0.14"/></filter>
+<radialGradient id="bg" cx="50%" cy="40%" r="80%"><stop offset="0" stop-color="#fff"/><stop offset="1" stop-color="#EEF2F8"/></radialGradient>
+<pattern id="dots" width="26" height="26" patternUnits="userSpaceOnUse"><circle cx="2" cy="2" r="1.1" fill="#C9D2E2"/></pattern>
+<marker id="ar" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#1F3864"/></marker>
+<marker id="ar2" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#7B52AB"/></marker>
+<marker id="ar3" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#6B7280"/></marker>
+<marker id="ar4" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="#2E9E5F"/></marker>
+<marker id="open" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="9" markerHeight="9" orient="auto"><path d="M0,0 L11,6 L0,12" fill="none" stroke="#1F3864" stroke-width="1.4"/></marker>
+<marker id="tri" viewBox="0 0 12 12" refX="11" refY="6" markerWidth="11" markerHeight="11" orient="auto"><path d="M0,0 L11,6 L0,12 z" fill="#fff" stroke="#1F3864" stroke-width="1.3"/></marker>
+</defs>
+<rect width="1900" height="1290" fill="url(#bg)"/><rect width="1900" height="1290" fill="url(#dots)" opacity="0.5"/>
+<text x="40" y="44" font-family="DejaVu Sans, Arial, sans-serif" font-size="22" fill="#1F3864" text-anchor="start" font-weight="bold">FarmaClick · Diagrama de despliegue (UML)</text>
+<text x="40" y="66" font-family="DejaVu Sans, Arial, sans-serif" font-size="12" fill="#666" text-anchor="start">Infraestructura real al 16-10-2026 · cómputo en Oracle Cloud (Santiago) · datos y autenticación en Supabase (São Paulo) · costo cero</text>
+<g filter="url(#sh)">
+<polygon points="40,480 50,470 340,470 330,480" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="330,480 340,470 340,730 330,740" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="40" y="480" width="290" height="260" rx="2" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+</g>
+<text x="51" y="497" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«device»</text>
+<text x="51" y="512" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Dispositivo del usuario</text>
+<text x="51" y="527.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">PC, tablet o móvil del personal</text>
+<g filter="url(#sh)">
+<polygon points="58,550 68,540 320,540 310,550" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="310,550 320,540 320,715 310,725" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="58" y="550" width="252" height="175" rx="2" fill="url(#g_pres)" stroke="#2F6DB5" stroke-width="1.5"/>
+</g>
+<text x="69" y="567" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="69" y="582" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Navegador web</text>
+<text x="69" y="597.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Chrome · Edge · Firefox · Safari</text>
+<rect x="234.6" y="556" width="68.4" height="16" rx="8" fill="#2F6DB5"/>
+<text x="268.8" y="568" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">FRONTEND</text>
+<g filter="url(#sh2)"><polygon points="72,625 290,625 302,637 302,705 72,705" fill="#fff" stroke="#2F6DB5" stroke-width="1.4"/></g>
+<polygon points="290,625 290,637 302,637" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.2"/>
+<text x="80" y="638" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#666" text-anchor="start" font-style="italic">«artifact»</text>
+<text x="80" y="652" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#1B2438" text-anchor="start" font-weight="bold">SPA FarmaClick</text>
+<text x="80" y="665.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">React 19 · Vite 8 · Bootstrap 5.3</text>
+<text x="80" y="676.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">descargada desde Nginx</text>
+<rect x="400" y="90" width="1040" height="760" rx="30" fill="#FFF6F2" stroke="#C74634" stroke-width="2" stroke-dasharray="9 6" filter="url(#sh2)"/>
+<text x="424" y="117" font-family="DejaVu Sans, Arial, sans-serif" font-size="14.5" fill="#9A3322" text-anchor="start" font-weight="bold">Oracle Cloud Infrastructure · sa-santiago-1</text>
+<text x="424" y="134" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#555" text-anchor="start">VCN vcn-farmaclick 10.0.0.0/16 · subred pública 10.0.0.0/24</text>
+<text x="424" y="148" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#555" text-anchor="start">Recursos Always Free</text>
+<g filter="url(#sh)">
+<polygon points="440,185 450,175 800,175 790,185" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="790,185 800,175 800,290 790,300" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="440" y="185" width="350" height="115" rx="2" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+</g>
+<text x="451" y="202" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="451" y="217" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Load Balancer lb-farmaclick-prod</text>
+<text x="451" y="232.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Flexible 10 Mbps · IP pública</text>
+<text x="451" y="245.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Listener https :443 · certificado Let's Encrypt</text>
+<text x="451" y="259.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Backend set → farmaclick-prod:80 · salud GET /healthz</text>
+<g filter="url(#sh)">
+<polygon points="440,355 450,345 1040,345 1030,355" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1030,355 1040,345 1040,805 1030,815" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="440" y="355" width="590" height="460" rx="2" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+</g>
+<text x="451" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«device»</text>
+<text x="451" y="387" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">VM farmaclick-prod</text>
+<text x="451" y="402.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">E2.1.Micro · 1 OCPU · 1 GB</text>
+<text x="451" y="415.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">x86_64 · Ubuntu 24.04</text>
+<text x="451" y="429.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">NSG: :80 solo desde la VCN</text>
+<g filter="url(#sh)">
+<polygon points="458,450 468,440 1023,440 1013,450" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1013,450 1023,440 1023,730 1013,740" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="458" y="450" width="555" height="290" rx="2" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+</g>
+<text x="469" y="467" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="469" y="482" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Docker Engine 29 · Compose 2.40</text>
+<g filter="url(#sh)">
+<polygon points="474,500 484,490 729,490 719,500" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="719,500 729,490 729,715 719,725" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="474" y="500" width="245" height="225" rx="2" fill="url(#g_pres)" stroke="#2F6DB5" stroke-width="1.5"/>
+</g>
+<text x="485" y="517" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="485" y="532" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Contenedor web</text>
+<text x="485" y="547.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Nginx · puerto 80</text>
+<text x="485" y="560.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">SPA + proxy /api · /healthz</text>
+<rect x="643.6" y="506" width="68.4" height="16" rx="8" fill="#2F6DB5"/>
+<text x="677.8" y="518" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">FRONTEND</text>
+<g filter="url(#sh2)"><polygon points="488,585 701,585 713,597 713,655 488,655" fill="#fff" stroke="#2F6DB5" stroke-width="1.4"/></g>
+<polygon points="701,585 701,597 713,597" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.2"/>
+<text x="496" y="598" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#666" text-anchor="start" font-style="italic">«artifact»</text>
+<text x="496" y="612" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#1B2438" text-anchor="start" font-weight="bold">farmaclick-web:prod</text>
+<text x="496" y="625.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">imagen linux/amd64 (GHCR)</text>
+<g filter="url(#sh)">
+<polygon points="750,500 760,490 1008,490 998,500" fill="#FFDDB8" stroke="#D9822B" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="998,500 1008,490 1008,715 998,725" fill="#FFDDB8" stroke="#D9822B" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="750" y="500" width="248" height="225" rx="2" fill="url(#g_app)" stroke="#D9822B" stroke-width="1.5"/>
+</g>
+<text x="761" y="517" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="761" y="532" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Contenedor api</text>
+<text x="761" y="547.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Node.js 22 · Express 5 · :3000</text>
+<text x="761" y="560.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">solo red interna (expose)</text>
+<rect x="929.4" y="506" width="61.6" height="16" rx="8" fill="#D9822B"/>
+<text x="960.2" y="518" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">BACKEND</text>
+<g filter="url(#sh2)"><polygon points="764,585 980,585 992,597 992,655 764,655" fill="#fff" stroke="#D9822B" stroke-width="1.4"/></g>
+<polygon points="980,585 980,597 992,597" fill="#FFDDB8" stroke="#D9822B" stroke-width="1.2"/>
+<text x="772" y="598" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#666" text-anchor="start" font-style="italic">«artifact»</text>
+<text x="772" y="612" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#1B2438" text-anchor="start" font-weight="bold">farmaclick-api:prod</text>
+<text x="772" y="625.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">imagen linux/amd64 (GHCR)</text>
+<g filter="url(#sh2)"><polygon points="458,752 716,752 728,764 728,802 458,802" fill="#fff" stroke="#6B7280" stroke-width="1.4"/></g>
+<polygon points="716,752 716,764 728,764" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.2"/>
+<text x="466" y="765" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#666" text-anchor="start" font-style="italic">«artifact»</text>
+<text x="466" y="779" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#1B2438" text-anchor="start" font-weight="bold">.env</text>
+<text x="466" y="792.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">secretos del entorno · chmod 600</text>
+<g filter="url(#sh2)"><polygon points="742,752 1010,752 1022,764 1022,802 742,802" fill="#fff" stroke="#6B7280" stroke-width="1.4"/></g>
+<polygon points="1010,752 1010,764 1022,764" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.2"/>
+<text x="750" y="765" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#666" text-anchor="start" font-style="italic">«artifact»</text>
+<text x="750" y="779" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#1B2438" text-anchor="start" font-weight="bold">docker-compose.yml</text>
+<text x="750" y="792.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">copiado por la CI en cada despliegue</text>
+<g filter="url(#sh)">
+<polygon points="1080,355 1090,345 1410,345 1400,355" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1400,355 1410,345 1410,805 1400,815" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1080" y="355" width="320" height="460" rx="2" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+</g>
+<text x="1091" y="372" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«device»</text>
+<text x="1091" y="387" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">VM farmaclick-dev</text>
+<text x="1091" y="402.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">E2.1.Micro · x86_64 · Ubuntu 24.04</text>
+<text x="1091" y="415.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">NSG nsg-dev: :80 abierto (HTTP por IP)</text>
+<g filter="url(#sh)">
+<polygon points="1096,450 1106,440 1392,440 1382,450" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1382,450 1392,440 1392,730 1382,740" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1096" y="450" width="286" height="290" rx="2" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+</g>
+<text x="1107" y="467" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1107" y="482" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Docker Engine · Compose</text>
+<g filter="url(#sh)">
+<polygon points="1110,498 1120,488 1376,488 1366,498" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1366,498 1376,488 1376,593 1366,603" fill="#D2E4FA" stroke="#2F6DB5" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1110" y="498" width="256" height="105" rx="2" fill="url(#g_pres)" stroke="#2F6DB5" stroke-width="1.5"/>
+</g>
+<text x="1121" y="515" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1121" y="530" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Contenedor web</text>
+<text x="1121" y="545.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Nginx :80 · farmaclick-web:dev</text>
+<rect x="1290.6" y="504" width="68.4" height="16" rx="8" fill="#2F6DB5"/>
+<text x="1324.8" y="516" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">FRONTEND</text>
+<g filter="url(#sh)">
+<polygon points="1110,622 1120,612 1376,612 1366,622" fill="#FFDDB8" stroke="#D9822B" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1366,622 1376,612 1376,717 1366,727" fill="#FFDDB8" stroke="#D9822B" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1110" y="622" width="256" height="105" rx="2" fill="url(#g_app)" stroke="#D9822B" stroke-width="1.5"/>
+</g>
+<text x="1121" y="639" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1121" y="654" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Contenedor api</text>
+<text x="1121" y="669.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Node.js :3000 · farmaclick-api:dev</text>
+<rect x="1297.4" y="628" width="61.6" height="16" rx="8" fill="#D9822B"/>
+<text x="1328.2" y="640" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">BACKEND</text>
+<g filter="url(#sh2)"><polygon points="1096,752 1380,752 1392,764 1392,802 1096,802" fill="#fff" stroke="#6B7280" stroke-width="1.4"/></g>
+<polygon points="1380,752 1380,764 1392,764" fill="#EDEEF3" stroke="#6B7280" stroke-width="1.2"/>
+<text x="1104" y="765" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#666" text-anchor="start" font-style="italic">«artifact»</text>
+<text x="1104" y="779" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#1B2438" text-anchor="start" font-weight="bold">.env (dev)</text>
+<text x="1104" y="792.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#4A5163" text-anchor="start">secretos de dev · chmod 600</text>
+<rect x="400" y="900" width="1040" height="350" rx="30" fill="#F0FBF4" stroke="#3E9E6B" stroke-width="2" stroke-dasharray="9 6" filter="url(#sh2)"/>
+<text x="424" y="927" font-family="DejaVu Sans, Arial, sans-serif" font-size="14.5" fill="#1E6B43" text-anchor="start" font-weight="bold">Supabase Cloud · sa-east-1 (São Paulo) · plan gratuito</text>
+<text x="424" y="944" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#555" text-anchor="start">Un proyecto por entorno · 39 tablas · migraciones 001–010</text>
+<rect x="430" y="975" width="600" height="250" rx="16" fill="#FFFFFF" fill-opacity="0.6" stroke="#9FD3B4" stroke-width="1.2"/>
+<text x="444" y="995" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1E6B43" text-anchor="start" font-weight="bold">Proyecto farmaclick-prod</text>
+<rect x="1070" y="975" width="345" height="250" rx="16" fill="#FFFFFF" fill-opacity="0.6" stroke="#9FD3B4" stroke-width="1.2"/>
+<text x="1084" y="995" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1E6B43" text-anchor="start" font-weight="bold">Proyecto farmaclick-dev</text>
+<g filter="url(#sh)">
+<polygon points="446,1018 456,1008 621,1008 611,1018" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="611,1018 621,1008 621,1198 611,1208" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="446" y="1018" width="165" height="190" rx="2" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+</g>
+<text x="457" y="1035" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="457" y="1050" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Supabase Auth</text>
+<text x="457" y="1065.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Emite y valida JWT</text>
+<text x="457" y="1078.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">HTTPS :443</text>
+<rect x="556.0" y="1024" width="48.0" height="16" rx="8" fill="#2E9E5F"/>
+<text x="580.0" y="1036" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">DATOS</text>
+<g filter="url(#sh)">
+<polygon points="640,1018 650,1008 815,1008 805,1018" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="805,1018 815,1008 815,1198 805,1208" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="640" y="1018" width="165" height="190" rx="2" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+</g>
+<text x="651" y="1035" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="651" y="1050" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Transaction pooler</text>
+<text x="651" y="1065.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">Supavisor · IPv4</text>
+<text x="651" y="1078.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">TCP 6543 (TLS)</text>
+<text x="651" y="1092.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">usuario app_backend</text>
+<rect x="750.0" y="1024" width="48.0" height="16" rx="8" fill="#2E9E5F"/>
+<text x="774.0" y="1036" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">DATOS</text>
+<g filter="url(#sh)">
+<polygon points="835,1018 845,1008 1017,1008 1007,1018" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1007,1018 1017,1008 1017,1198 1007,1208" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="835" y="1018" width="172" height="190" rx="2" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+</g>
+<text x="846" y="1035" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="846" y="1050" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">PostgreSQL 16</text>
+<text x="846" y="1065.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">TCP 5432 · RLS</text>
+<text x="846" y="1078.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">pg_cron: 3 jobs</text>
+<rect x="952.0" y="1024" width="48.0" height="16" rx="8" fill="#2E9E5F"/>
+<text x="976.0" y="1036" font-family="DejaVu Sans, Arial, sans-serif" font-size="8.5" fill="#fff" text-anchor="middle" font-weight="bold">DATOS</text>
+<g filter="url(#sh)">
+<polygon points="1086,1018 1096,1008 1241,1008 1231,1018" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1231,1018 1241,1008 1241,1198 1231,1208" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1086" y="1018" width="145" height="190" rx="2" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+</g>
+<text x="1097" y="1035" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1097" y="1050" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="start" font-weight="bold">Supabase Auth</text>
+<text x="1097" y="1065.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">JWT · :443</text>
+<g filter="url(#sh)">
+<polygon points="1252,1018 1262,1008 1402,1008 1392,1018" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1392,1018 1402,1008 1402,1093 1392,1103" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1252" y="1018" width="140" height="85" rx="2" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+</g>
+<text x="1263" y="1035" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1263" y="1050" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="start" font-weight="bold">Pooler :6543</text>
+<g filter="url(#sh)">
+<polygon points="1252,1122 1262,1112 1402,1112 1392,1122" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1392,1122 1402,1112 1402,1198 1392,1208" fill="#CBEDD8" stroke="#2E9E5F" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1252" y="1122" width="140" height="86" rx="2" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+</g>
+<text x="1263" y="1139" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1263" y="1154" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#1B2438" text-anchor="start" font-weight="bold">PostgreSQL 16</text>
+<rect x="1490" y="90" width="380" height="1160" rx="30" fill="#FFFBE8" stroke="#D9A300" stroke-width="2" stroke-dasharray="9 6" filter="url(#sh2)"/>
+<text x="1514" y="117" font-family="DejaVu Sans, Arial, sans-serif" font-size="14.5" fill="#8A6A00" text-anchor="start" font-weight="bold">Servicios externos</text>
+<text x="1514" y="134" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#555" text-anchor="start">Gratuitos</text>
+<g filter="url(#sh)">
+<polygon points="1515,185 1525,175 1845,175 1835,185" fill="#FFEDA0" stroke="#B89B00" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1835,185 1845,175 1845,285 1835,295" fill="#FFEDA0" stroke="#B89B00" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1515" y="185" width="320" height="110" rx="2" fill="url(#g_ext)" stroke="#B89B00" stroke-width="1.5"/>
+</g>
+<text x="1526" y="202" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1526" y="217" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">DuckDNS</text>
+<text x="1526" y="232.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">farmaclick-medifarm.duckdns.org</text>
+<text x="1526" y="245.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">→ IP pública del balanceador</text>
+<text x="1526" y="259.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">DNS-01 para Let's Encrypt</text>
+<g filter="url(#sh)">
+<polygon points="1515,390 1525,380 1845,380 1835,390" fill="#E2D2F4" stroke="#7B52AB" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1835,390 1845,380 1845,545 1835,555" fill="#E2D2F4" stroke="#7B52AB" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1515" y="390" width="320" height="165" rx="2" fill="url(#g_ci)" stroke="#7B52AB" stroke-width="1.5"/>
+</g>
+<text x="1526" y="407" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1526" y="422" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">GitHub Container Registry</text>
+<text x="1526" y="437.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">ghcr.io/alefuentes982/</text>
+<text x="1526" y="450.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">farmaclick-api · farmaclick-web</text>
+<text x="1526" y="464.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">etiquetas dev · prod · SHA</text>
+<g filter="url(#sh)">
+<polygon points="1515,650 1525,640 1845,640 1835,650" fill="#FFEDA0" stroke="#B89B00" stroke-width="1.5" stroke-linejoin="round"/>
+<polygon points="1835,650 1845,640 1845,760 1835,770" fill="#FFEDA0" stroke="#B89B00" stroke-width="1.5" stroke-linejoin="round"/>
+<rect x="1515" y="650" width="320" height="120" rx="2" fill="url(#g_ext)" stroke="#B89B00" stroke-width="1.5"/>
+</g>
+<text x="1526" y="667" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.5" fill="#555" text-anchor="start" font-style="italic">«executionEnvironment»</text>
+<text x="1526" y="682" font-family="DejaVu Sans, Arial, sans-serif" font-size="12.5" fill="#1B2438" text-anchor="start" font-weight="bold">Servidor SMTP (Gmail)</text>
+<text x="1526" y="697.0" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">smtp.gmail.com · TCP 587 STARTTLS</text>
+<text x="1526" y="710.5" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#4A5163" text-anchor="start">comprobantes y avisos de caja</text>
+<rect x="1515" y="870" width="330" height="120" rx="14" fill="#fff" fill-opacity="0.8" stroke="#D9A300" stroke-dasharray="5 4"/>
+<text x="1532" y="898" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#5A4A00" text-anchor="start">Despliegue: GitHub Actions entra por</text>
+<text x="1532" y="913" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#5A4A00" text-anchor="start">SSH (TCP 22, llave exclusiva) a cada VM,</text>
+<text x="1532" y="928" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#5A4A00" text-anchor="start">copia docker-compose.yml y ejecuta</text>
+<text x="1532" y="943" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#5A4A00" text-anchor="start">docker compose pull + up.</text>
+<text x="1532" y="958" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.5" fill="#5A4A00" text-anchor="start">Detalle en el diagrama de CI/CD.</text>
+<path d="M320,600 C380,600 380,238 440,238" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="320" cy="600" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="440" cy="238" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="323.3" y="402.0" width="97.39999999999999" height="36" rx="18.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="372" y="417" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«HTTPS»</text>
+<text x="372" y="431" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 443 · TLS</text>
+<path d="M700,300 L700,490" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="700" cy="300" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="700" cy="490" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="639.7" y="382.0" width="120.6" height="36" rx="18.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="700" y="397" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«HTTP»</text>
+<text x="700" y="411" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 80 · /healthz</text>
+<path d="M729,620 L750,620" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="729" cy="620" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="750" cy="620" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="705.8" y="658.0" width="68.4" height="36" rx="18.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="740" y="673" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«HTTP»</text>
+<text x="740" y="687" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 3000</text>
+<path d="M1244,603 L1244,612" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M180,470 L180,100 Q180,80 200,80 L1432,80 Q1452,80 1452,100 L1452,520 Q1452,540 1432,540 L1376,540" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="180" cy="470" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1376" cy="540" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="1081.25" y="62.0" width="197.5" height="36" rx="18.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="1180" y="77" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«HTTP» equipo de desarrollo</text>
+<text x="1180" y="91" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 80 · http://&lt;IP-VM-dev&gt;</text>
+<path d="M790,725 C790,900 535,880 535,1008" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="790" cy="725" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="535" cy="1008" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="553.1" y="854.0" width="143.8" height="36" rx="18.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="625" y="869" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«HTTPS»</text>
+<text x="625" y="883" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 443 · login y JWT</text>
+<path d="M900,725 C900,880 728,900 728,1008" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="900" cy="725" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="728" cy="1008" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="795.5" y="854.0" width="139.0" height="36" rx="18.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="865" y="869" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«PostgreSQL / TLS»</text>
+<text x="865" y="883" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 6543</text>
+<path d="M815,1108 L835,1108" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="815" cy="1108" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="835" cy="1108" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<path d="M1300,727 C1300,860 1175,880 1165,1008" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1300" cy="727" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1165" cy="1008" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<path d="M1350,727 C1350,880 1330,900 1327,1008" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<circle cx="1350" cy="727" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1327" cy="1008" r="4.5" fill="#1F3864" stroke="#fff" stroke-width="1.5"/>
+<rect x="1175.75" y="861.0" width="158.5" height="22" rx="11.0" fill="#fff" stroke="#1F3864" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="1255" y="876" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#1F3864" text-anchor="middle" font-weight="bold">«HTTPS» · «TLS :6543»</text>
+<path d="M1327,1103 L1327,1112" fill="none" stroke="#1F3864" stroke-width="2.2" stroke-linecap="round"/>
+<path d="M1376,680 C1430,680 1460,700 1515,700" fill="none" stroke="#B89B00" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="1376" cy="680" r="4.5" fill="#B89B00" stroke="#fff" stroke-width="1.5"/>
+<circle cx="1515" cy="700" r="4.5" fill="#B89B00" stroke="#fff" stroke-width="1.5"/>
+<path d="M1008,700 L1060,700 Q1066,700 1066,710 L1066,822 Q1066,830 1076,830 L1468,830 Q1478,830 1478,820 L1478,712 Q1478,704 1488,704 L1515,704" fill="none" stroke="#B89B00" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<circle cx="1008" cy="700" r="4.5" fill="#B89B00" stroke="#fff" stroke-width="1.5"/>
+<rect x="1446.7" y="752.0" width="62.6" height="36" rx="18.0" fill="#fff" stroke="#8A6A00" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="1478" y="767" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#8A6A00" text-anchor="middle" font-weight="bold">«SMTP»</text>
+<text x="1478" y="781" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">TCP 587</text>
+<path d="M1410,470 L1515,470" fill="none" stroke="#7B52AB" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#ar2)"/>
+<rect x="1428.25" y="482.0" width="93.5" height="36" rx="18.0" fill="#fff" stroke="#7B52AB" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="1475" y="497" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#7B52AB" text-anchor="middle" font-weight="bold">docker pull</text>
+<text x="1475" y="511" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">HTTPS 443</text>
+<path d="M1040,400 L1052,400 Q1062,400 1062,390 L1062,340 Q1062,330 1072,330 L1455,330 Q1465,330 1465,340 L1465,410 Q1465,420 1475,420 L1515,420" fill="none" stroke="#7B52AB" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 5" marker-end="url(#ar2)"/>
+<path d="M800,240 L1515,240" fill="none" stroke="#B89B00" stroke-width="2.2" stroke-linecap="round" stroke-dasharray="7 5"/>
+<rect x="1057.8" y="222.0" width="184.4" height="36" rx="18.0" fill="#fff" stroke="#8A6A00" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="1150" y="237" font-family="DejaVu Sans, Arial, sans-serif" font-size="10.2" fill="#8A6A00" text-anchor="middle" font-weight="bold">DNS</text>
+<text x="1150" y="251" font-family="DejaVu Sans, Arial, sans-serif" font-size="9.2" fill="#444" text-anchor="middle">dominio → IP del balanceador</text>
+<rect x="40" y="790" width="330" height="460" rx="20" fill="#fff" fill-opacity="0.94" stroke="#B6C0D4" stroke-width="1.3" filter="url(#sh2)"/>
+<text x="60" y="822" font-family="DejaVu Sans, Arial, sans-serif" font-size="15" fill="#1F3864" text-anchor="start" font-weight="bold">Leyenda</text>
+<rect x="62" y="838" width="26" height="16" rx="3" fill="url(#g_pres)" stroke="#2F6DB5" stroke-width="1.5"/>
+<text x="98" y="850" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start">Frontend (presentación)</text>
+<rect x="62" y="862" width="26" height="16" rx="3" fill="url(#g_app)" stroke="#D9822B" stroke-width="1.5"/>
+<text x="98" y="874" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start">Backend (aplicación)</text>
+<rect x="62" y="886" width="26" height="16" rx="3" fill="url(#g_data)" stroke="#2E9E5F" stroke-width="1.5"/>
+<text x="98" y="898" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start">Datos y autenticación</text>
+<rect x="62" y="910" width="26" height="16" rx="3" fill="url(#g_infra)" stroke="#6B7280" stroke-width="1.5"/>
+<text x="98" y="922" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start">Infraestructura</text>
+<rect x="62" y="934" width="26" height="16" rx="3" fill="url(#g_ci)" stroke="#7B52AB" stroke-width="1.5"/>
+<text x="98" y="946" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start">Entrega continua</text>
+<rect x="62" y="958" width="26" height="16" rx="3" fill="url(#g_ext)" stroke="#B89B00" stroke-width="1.5"/>
+<text x="98" y="970" font-family="DejaVu Sans, Arial, sans-serif" font-size="11.5" fill="#222" text-anchor="start">Servicio externo</text>
+<polygon points="62,1000 70,992 88,992 80,1000" fill="#EDEEF3" stroke="#6B7280"/><rect x="62" y="1000" width="18" height="12" fill="#fff" stroke="#6B7280"/>
+<text x="98" y="1010" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#222" text-anchor="start">Nodo «device» / «executionEnvironment»</text>
+<polygon points="62,1022 80,1022 88,1030 88,1040 62,1040" fill="#fff" stroke="#6B7280"/>
+<text x="98" y="1036" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#222" text-anchor="start">Artefacto desplegado en el nodo</text>
+<line x1="62" y1="1058" x2="88" y2="1058" stroke="#1F3864" stroke-width="2.2"/>
+<text x="98" y="1062" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#222" text-anchor="start">Vía de comunicación «protocolo»</text>
+<line x1="62" y1="1082" x2="88" y2="1082" stroke="#7B52AB" stroke-width="2.2" stroke-dasharray="6 4"/>
+<text x="98" y="1086" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#222" text-anchor="start">Despliegue / descarga de imágenes</text>
+<line x1="62" y1="1106" x2="88" y2="1106" stroke="#B89B00" stroke-width="2.2" stroke-dasharray="6 4"/>
+<text x="98" y="1110" font-family="DejaVu Sans, Arial, sans-serif" font-size="11" fill="#222" text-anchor="start">Correo y DNS</text>
+<text x="62" y="1136" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#444" text-anchor="start">Producción: https://farmaclick-medifarm.duckdns.org</text>
+<text x="62" y="1150" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#444" text-anchor="start">Dev: http://&lt;IP-VM-dev&gt; (sin balanceador)</text>
+<text x="62" y="1164" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#444" text-anchor="start">La VM de prod no recibe tráfico directo:</text>
+<text x="62" y="1178" font-family="DejaVu Sans, Arial, sans-serif" font-size="10" fill="#444" text-anchor="start">solo el balanceador llega a su puerto 80.</text></svg>

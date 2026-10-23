@@ -1,0 +1,16 @@
+# Despliegue en una VM de Oracle Cloud (x86_64, imágenes linux/amd64). Una VM por entorno: dev/staging y producción. GitHub Actions lo ejecuta por SSH.
+# Uso en la VM:   cd ~/farmaclick && docker compose pull && docker compose up -d
+# Requiere en la misma carpeta un archivo .env (copia de .env.example, chmod 600 .env).
+# GHCR_OWNER e IMAGE_TAG los inyecta el job "desplegar" de la CI; los del .env solo se usan al ejecutarlo a mano.
+services:
+  api:
+    image: ghcr.io/${GHCR_OWNER}/farmaclick-api:${IMAGE_TAG:-prod}
+    env_file: .env
+    restart: unless-stopped
+    # La API no se publica fuera de la VM: solo la alcanza el contenedor web por la red interna de Docker.
+    expose: ["3000"]
+  web:
+    image: ghcr.io/${GHCR_OWNER}/farmaclick-web:${IMAGE_TAG:-prod}
+    restart: unless-stopped
+    depends_on: [api]
+    ports: ["80:80"]   # el balanceador reenvía aquí
